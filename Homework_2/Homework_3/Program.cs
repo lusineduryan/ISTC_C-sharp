@@ -14,7 +14,7 @@ namespace Homework_3
             string surname;
             double weight;
             int year;
-            bool sex;
+            string sex;
            
             Console.Write("Please enter your first name - ");
             name = Console.ReadLine();
@@ -24,8 +24,8 @@ namespace Homework_3
             weight = Convert.ToDouble(Console.ReadLine());
             Console.Write("Please enter your birth year - ");
             year = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Please enter your sex (true if female, false if male) - ");
-            sex = Convert.ToBoolean(Console.ReadLine());
+            Console.Write("Please enter your sex (female/male) - ");
+            sex = Console.ReadLine();
 
             int age = 2018 - year;
             string category;
@@ -39,7 +39,7 @@ namespace Homework_3
             }
 
             string _sex;
-            if (sex = true)
+            if (sex == "female")
             {
                 _sex = "woman";
             }
