@@ -26,7 +26,7 @@ namespace Ex_8_firstMultipleOf3
                     flag = false;
                 }
             }
-            Console.WriteLine(flag?$"{firstMultipleOf3}":$"no multiple of 3 found");
+            Console.WriteLine(flag?$"{firstMultipleOf3}":$"no multiple of 3 found in the given sector");
             Console.ReadKey();
         }
     }
