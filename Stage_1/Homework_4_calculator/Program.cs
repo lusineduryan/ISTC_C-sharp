@@ -30,7 +30,7 @@ namespace Homework_4_calculator
             {
                 result = firstNumber * secondNumber;
             }
-            else if (operationType == "/")
+            else if (operationType == "/" && secondNumber !=0)
             {
                 result = firstNumber / secondNumber;
             }
