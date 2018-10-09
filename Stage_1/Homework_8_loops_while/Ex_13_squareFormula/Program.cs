@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex_13_squareFormula
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            uint N = Convert.ToUInt32(Console.ReadLine());
+            int square = 0;
+            int i = 1;
+            while (i <= 2 * N - 1)
+            {
+                square += i;
+                Console.WriteLine(square);
+                i += 2;
+            }
+            Console.ReadKey();
+        }
+    }
+}
