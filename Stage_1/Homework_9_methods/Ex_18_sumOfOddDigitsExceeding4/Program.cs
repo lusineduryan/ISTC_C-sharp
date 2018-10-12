@@ -8,6 +8,11 @@ namespace Ex_18_sumOfOddDigitsExceeding4
 {
     class Program
     {
+        /// <summary>
+        /// calculates the sum of all odd digits exceeding 4
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         static int SumOfOddDigitsExc4(int number)
         {
             int sum = 0;

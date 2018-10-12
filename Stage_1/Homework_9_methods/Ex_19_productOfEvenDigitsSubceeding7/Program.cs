@@ -8,6 +8,11 @@ namespace Ex_19_productOfEvenDigitsSubceeding7
 {
     class Program
     {
+        /// <summary>
+        /// calculates the product of all even digits subceeding 7
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         static int productOfEvenNumbersSub7(int number)
         {
             int product = 1;
