@@ -13,7 +13,7 @@ namespace Ex_1_sumOfDigits
             int inputNum = Convert.ToInt32(Console.ReadLine());
             int sumOfDigits = 0;
             int i = 0;
-            while (inputNum / Math.Pow(10, i) != 0)
+            while ((int) (inputNum / Math.Pow(10, i)) != 0)
             {
                 sumOfDigits += (int) (inputNum / Math.Pow(10,i) % 10);
                 i++;
