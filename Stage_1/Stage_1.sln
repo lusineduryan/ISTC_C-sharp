@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_25_maxPowerOf2Subceeding
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_26_minPowerOf2ExceedingN", "Ex_26_minPowerOf2ExceedingN\Ex_26_minPowerOf2ExceedingN.csproj", "{3112F713-A1A4-476A-8BF9-F6C7F2A8F197}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhombus", "Rhombus\Rhombus.csproj", "{3B608BFA-D484-48C3-80C5-5E0AF7993A4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{3112F713-A1A4-476A-8BF9-F6C7F2A8F197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3112F713-A1A4-476A-8BF9-F6C7F2A8F197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3112F713-A1A4-476A-8BF9-F6C7F2A8F197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B608BFA-D484-48C3-80C5-5E0AF7993A4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B608BFA-D484-48C3-80C5-5E0AF7993A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B608BFA-D484-48C3-80C5-5E0AF7993A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B608BFA-D484-48C3-80C5-5E0AF7993A4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
