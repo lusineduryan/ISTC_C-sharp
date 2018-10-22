@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Ex_32_sumOfSeq1")]
+[assembly: AssemblyTitle("Ex_32_SumOfSeq")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ex_32_sumOfSeq1")]
+[assembly: AssemblyProduct("Ex_32_SumOfSeq")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6791d405-8138-4c38-9d28-edc03afc8c09")]
+[assembly: Guid("c6258162-6816-446d-9446-f5dda8755627")]
 
 // Version information for an assembly consists of the following four values:
 //

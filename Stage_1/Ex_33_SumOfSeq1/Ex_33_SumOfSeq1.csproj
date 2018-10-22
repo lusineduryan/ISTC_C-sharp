@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6791D405-8138-4C38-9D28-EDC03AFC8C09}</ProjectGuid>
+    <ProjectGuid>{462D6FC2-4680-4CBC-9A8B-83AE5F89C2EF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ex_32_sumOfSeq1</RootNamespace>
-    <AssemblyName>Ex_32_sumOfSeq1</AssemblyName>
+    <RootNamespace>Ex_33_SumOfSeq1</RootNamespace>
+    <AssemblyName>Ex_33_SumOfSeq1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
