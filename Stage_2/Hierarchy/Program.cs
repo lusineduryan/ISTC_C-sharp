@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Hierarchy
 {
---  
+ 
     class Program
     {
         static void Main(string[] args)
         {
 
         }
--   }
+    }
     class Animal
     {
         public string Name { get; set; }
--       public Animal(string name)
+        public Animal(string name)
         {
             Name = name;
         }
---  }
+    }
     class Herbivore : Animal
     {
         public string MealP { get; set; }
@@ -82,7 +82,7 @@ namespace Hierarchy
         {
             RoarAmplitude = roar;
         }
--   }
+    }
     class Hyena : Carnivore
     {
         public double LaughAmplitude { get; set; }
@@ -94,7 +94,7 @@ namespace Hierarchy
         {
             LaughAmplitude = laugh;
         }
--   }
+    }
     class Man : Omnivore
     {
         public bool HasConscious { get; set; } = true;
@@ -105,6 +105,6 @@ namespace Hierarchy
         public Man(string name, string meal, bool conscious) :base(name, meal)
         {
             HasConscious = conscious;
--       }
--   }
--}
+        }
+    }
+}
