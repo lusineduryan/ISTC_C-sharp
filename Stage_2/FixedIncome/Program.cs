@@ -42,6 +42,6 @@ namespace FixedIncome
             bond.Volume(1000);
             note.Volume(1500000);
             Console.WriteLine(note.Currency);
--        }
+        }
     }
 }
