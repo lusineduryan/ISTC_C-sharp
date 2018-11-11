@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hierarchy", "Hierarchy\Hier
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanClass_base", "HumanClass_base\HumanClass_base.csproj", "{3298A36E-1482-4129-BA26-DC4D4EF034D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedClasses", "NestedClasses\NestedClasses.csproj", "{A2CCB29A-AA4D-4DDB-A0C2-707F5AE466C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3298A36E-1482-4129-BA26-DC4D4EF034D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3298A36E-1482-4129-BA26-DC4D4EF034D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3298A36E-1482-4129-BA26-DC4D4EF034D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CCB29A-AA4D-4DDB-A0C2-707F5AE466C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CCB29A-AA4D-4DDB-A0C2-707F5AE466C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CCB29A-AA4D-4DDB-A0C2-707F5AE466C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CCB29A-AA4D-4DDB-A0C2-707F5AE466C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
