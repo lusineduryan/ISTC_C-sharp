@@ -21,8 +21,9 @@ namespace AbstractFinancialClass
                 default: break;
             }
 
-            abstractInstrument.GetType();
-            abstractInstrument.GetTenor();
+            Console.WriteLine(abstractInstrument.GetType());
+            Console.WriteLine(abstractInstrument.GetTenor());
+            Console.ReadKey();
         }
     }
 }
