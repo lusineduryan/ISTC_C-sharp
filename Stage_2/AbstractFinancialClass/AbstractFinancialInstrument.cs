@@ -29,20 +29,19 @@ namespace AbstractFinancialClass
     }
    
       
-        public class LiquidInstrument : AbstractFinancialInstrument
+    public class LiquidInstrument : AbstractFinancialInstrument
+    {
+        public LiquidInstrument(string marketType, int tenor) : base(marketType, tenor)
         {
-            public LiquidInstrument(string marketType, int tenor) : base(marketType, tenor)
-            {
 
-            }
         }
-        public class ILLiquidInstrument : AbstractFinancialInstrument
-        {
-            public ILLiquidInstrument(string marketType, int tenor) : base(marketType, tenor)
-            {
-
-            }
-        }
-
     }
+    public class ILLiquidInstrument : AbstractFinancialInstrument
+    {
+        public ILLiquidInstrument(string marketType, int tenor) : base(marketType, tenor)
+        {
+
+        }
+    }
+}
 
