@@ -28,31 +28,31 @@ namespace BasicInterfaces
 
         static void Main(string[] args)
         {
-            Interface1 human1 = new HumanClass();
+            Interface1 human1 = new HumanClass() as Interface1;
             human1.Move();
             human1.Voice();
 
-            Interface2 human2 = new HumanClass();
+            Interface2 human2 = new HumanClass() as Interface2;
             human2.Breathe();
 
-            Interface3 human3 = new HumanClass();
+            Interface3 human3 = new HumanClass() as Interface3;
             human3.Think();
 
-            Interface2 fish1 = new FishClass();
+            Interface2 fish1 = new FishClass() as Interface2;
             fish1.Breathe();
 
-            Interface1 cat1 = new CatClass();
+            Interface1 cat1 = new CatClass() as Interface1;
             cat1.Move();
             cat1.Voice();
 
-            Interface2 cat2 = new CatClass();
+            Interface2 cat2 = new CatClass() as Interface2;
             cat2.Breathe();
 
-            Interface1 robot1 = new RobotClass();
+            Interface1 robot1 = new RobotClass() as Interface1;
             robot1.Move();
             robot1.Voice();
 
-            Interface3 robot2 = new RobotClass();
+            Interface3 robot2 = new RobotClass() as Interface3;
             robot2.Think();
         }
     }
