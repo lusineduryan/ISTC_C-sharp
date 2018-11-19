@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatClass.cs" />
+    <Compile Include="FishClass.cs" />
+    <Compile Include="HumanClass.cs" />
     <Compile Include="Interface1.cs" />
     <Compile Include="Interface2.cs" />
     <Compile Include="Interface3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RobotClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
