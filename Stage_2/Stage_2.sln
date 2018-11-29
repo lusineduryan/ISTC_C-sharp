@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicInterfaces", "BasicInt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexNumbers", "ComplexNumbers\ComplexNumbers.csproj", "{325117F7-1929-489D-92DE-8B78356B7B10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event_MathOperations", "Event_MathOperations\Event_MathOperations.csproj", "{35A2AE90-19CF-4E91-BF9A-F14E5BA9A396}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{325117F7-1929-489D-92DE-8B78356B7B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{325117F7-1929-489D-92DE-8B78356B7B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{325117F7-1929-489D-92DE-8B78356B7B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A2AE90-19CF-4E91-BF9A-F14E5BA9A396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A2AE90-19CF-4E91-BF9A-F14E5BA9A396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A2AE90-19CF-4E91-BF9A-F14E5BA9A396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A2AE90-19CF-4E91-BF9A-F14E5BA9A396}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
