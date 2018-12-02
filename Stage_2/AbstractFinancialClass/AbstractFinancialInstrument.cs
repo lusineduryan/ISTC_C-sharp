@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AbstractFinancialClass
 {
     public abstract class AbstractFinancialInstrument
-    {
+    { 
         private string marketType;
         private int tenor;
 

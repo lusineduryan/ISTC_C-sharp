@@ -14,6 +14,7 @@ namespace AbstractFinancialClass
             ILLiquidInstrument ABS = new ILLiquidInstrument("capital", 30);
             AbstractFinancialInstrument abstractInstrument = null;
             int number = Convert.ToInt32(Console.ReadLine());
+
             switch (number)
             {
                 case 1: abstractInstrument = Equity; break;
@@ -21,8 +22,22 @@ namespace AbstractFinancialClass
                 default: break;
             }
 
-            Console.WriteLine(abstractInstrument.GetType());
-            Console.WriteLine(abstractInstrument.GetTenor());
+            try
+            {
+                Console.WriteLine(abstractInstrument.GetType());
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("Please enter 1 or 2");
+            }
+            try
+            {
+                Console.WriteLine(abstractInstrument.GetTenor());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Please enter 1 or 2");
+            }
             Console.ReadKey();
         }
     }

@@ -25,7 +25,8 @@ namespace NestedClasses
                 ForeignInterestRate = foreignInterestRate;
             }
         }
-        FXForwardRate EURGBP = new FXForwardRate(0.8736, -0.00257, 0.0099263);
+
+        FXForwardRate EURGBP = new FXForwardRate(Convert.ToDouble(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()));
         public double FXForwardPrice(double Strike)
         {
             return EURGBP.ForwardRate(0.8736, -0.00257, 0.0099263) - Strike / (1 + EURGBP.DomesticInterestRate);
@@ -36,7 +37,15 @@ namespace NestedClasses
         static void Main(string[] args)
         {
             FXForwardValuation DTG_3579748 = new FXForwardValuation();
-            Console.WriteLine(DTG_3579748.FXForwardPrice(0.895683));
+            try
+            {
+                Console.WriteLine(DTG_3579748.FXForwardPrice(Convert.ToDouble(Console.ReadKey())));
+
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Please enter a double type!");
+            }
             Console.ReadKey();
         }
     }

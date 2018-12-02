@@ -101,8 +101,8 @@ namespace Hierarchy
         public void Say()
         {
             Console.WriteLine("I am homo spaiens");
--       }
-        public Man(string name, string meal, bool conscious) :base(name, meal)
+        }
+        public Man(string name, string meal, bool conscious) : base(name, meal)
         {
             HasConscious = conscious;
         }

@@ -25,8 +25,25 @@ namespace ComplexNumbers
     {
         static void Main(string[] args)
         {
-            ComplexNumber number1 = new ComplexNumber(5, 6);
-            ComplexNumber number2 = new ComplexNumber(10,23);
+            ComplexNumber number1 = new ComplexNumber(0, 0);
+            try
+            {
+               number1 = new ComplexNumber(Convert.ToDouble(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()));
+
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine("Please enter a double type parameter!");
+            }
+            ComplexNumber number2 = new ComplexNumber(0, 0);
+            try
+            {
+               number2 = new ComplexNumber(Convert.ToDouble(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()));
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine("Please enter a double type parameter!");
+            }
 
             OperationsClass operations = new OperationsClass();
 

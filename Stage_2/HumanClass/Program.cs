@@ -43,9 +43,35 @@ namespace HumanClass_adjusted
     {
         static void Main(string[] args)
         {
-            Human newHuman = new Human("male");
-            Human newHuman1 = new Human(80, "male");
-            Human newHuman2 = new Human(33, 80, "male");
+            Human newHuman = null;
+            try
+            {
+                newHuman = new Human(Convert.ToString(Console.ReadKey()));
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            Human newHuman1 = null;
+            try
+            {
+                newHuman1 = new Human(Convert.ToInt32(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            Human newHuman2 = null;
+            try
+            {
+                newHuman2 = new Human(Convert.ToInt32(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.WriteLine(newHuman1.Age);
             Console.WriteLine(newHuman2.Weight);
             Console.ReadKey();

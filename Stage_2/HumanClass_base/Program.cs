@@ -70,7 +70,16 @@ namespace HumanClass_base
     {
         static void Main(string[] args)
         {
-            Human newHuman = new Human("Cristiano", "Ronaldo", 33, 80, "male");
+            Human newHuman = null;
+            try
+            {
+                newHuman = new Human(Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToInt32(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
+
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             newHuman.GetName();
             newHuman.SetName("Cris");
             newHuman.GetName();

@@ -36,8 +36,28 @@ namespace FixedIncome
     {
         static void Main(string[] args)
         {
-            FixedIncome bond = new FixedIncome(5.5, 7, "AA", "EUR", "Austria");
-            FixedIncome note = new FixedIncome(1, 1, "AAA", "USD", "USA");
+
+            FixedIncome bond = null;
+            try
+            {
+                bond = new FixedIncome(Convert.ToDouble(Console.ReadKey()), Convert.ToInt32(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
+
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            FixedIncome note = null;
+            try
+            {
+                note = new FixedIncome(Convert.ToDouble(Console.ReadKey()), Convert.ToInt32(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
+
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             bond.Maturity = 6;
             bond.Volume(1000);
             note.Volume(1500000);

@@ -12,7 +12,14 @@ namespace Event_MathOperations
         public event OperationDelegate OperationsEvent;
         public void Invoker()
         {
-            if (OperationsEvent != null) OperationsEvent.Invoke(Convert.ToInt32(Console.ReadLine()),Convert.ToInt32(Console.ReadLine()));
+            try
+            {
+                OperationsEvent.Invoke(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
+            }
+            catch (FormatException e) when (OperationsEvent != null)
+            {
+               Console.WriteLine("Please enter an integer!");
+            }
         }
     }
 }
