@@ -23,9 +23,9 @@ namespace LINQ
                 new FixedIncome { InterestRate = 3.6, Issuer = "USA", Maturity = 8}
             };
 
-            var issuer = InstrumentList.Select(s => new { s.Issuer }).ToList();
-            var lowyield = InstrumentList.Where(s => s.InterestRate < 5).Select(s => new { s.InterestRate }).ToList();
-            var instrumentsGroupedByMaturity = InstrumentList.GroupBy(s => s.Maturity).OrderBy(s1 => s1.Key)
+            var issuer = InstrumentList.Select(s => new {s.Issuer }).ToList();
+            var lowyield = InstrumentList.Where(s => s.InterestRate < 5).Select(s => new { s.InterestRate } ).ToList();
+            var instrumentsGroupedByMaturity = InstrumentList.GroupBy(s => s.Maturity).OrderBy(s1 => s1.Key).Select(s1 => new { s1, s1.Key }).ToList();
 
             for (int i = 0; i < issuer.Count; i++)
             {
