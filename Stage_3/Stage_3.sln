@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stage_3", "Stage_3\Stage_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatinArmConverter", "LatinArmConverter\LatinArmConverter.csproj", "{BA720635-538C-4AA0-93FC-AB3ECC2FA1DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem", "FileSystem\FileSystem.csproj", "{33350BEC-D168-4177-85DE-2FEFD87A852B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BA720635-538C-4AA0-93FC-AB3ECC2FA1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA720635-538C-4AA0-93FC-AB3ECC2FA1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA720635-538C-4AA0-93FC-AB3ECC2FA1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33350BEC-D168-4177-85DE-2FEFD87A852B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33350BEC-D168-4177-85DE-2FEFD87A852B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33350BEC-D168-4177-85DE-2FEFD87A852B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33350BEC-D168-4177-85DE-2FEFD87A852B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
