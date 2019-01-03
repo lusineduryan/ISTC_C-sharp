@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem", "FileSystem\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintingAllFiles", "PrintingAllFiles\PrintingAllFiles.csproj", "{862BEBAE-CE2B-4190-B8C7-6EF03959A7ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brackets", "Brackets\Brackets.csproj", "{D931907B-76BE-42C6-9E63-3DC8588BD4BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{862BEBAE-CE2B-4190-B8C7-6EF03959A7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{862BEBAE-CE2B-4190-B8C7-6EF03959A7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{862BEBAE-CE2B-4190-B8C7-6EF03959A7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D931907B-76BE-42C6-9E63-3DC8588BD4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D931907B-76BE-42C6-9E63-3DC8588BD4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D931907B-76BE-42C6-9E63-3DC8588BD4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D931907B-76BE-42C6-9E63-3DC8588BD4BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
