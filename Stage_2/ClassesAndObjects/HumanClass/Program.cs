@@ -70,11 +70,14 @@ namespace HumanClass
     {
         static void Main(string[] args)
         {
-            Human newHuman = new Human(Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToInt32(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
+            Human newHuman = new Human(Convert.ToString(Console.ReadLine()), Convert.ToString(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToString(Console.ReadLine()));
             newHuman.GetName();
             newHuman.SetName("Cris");
+            newHuman.GetName();
             newHuman.GetAge();
-            newHuman.SetAge(33);
+            newHuman.SetAge(34);
+            newHuman.GetAge();
+            Console.ReadKey();
         }
     }
 }
