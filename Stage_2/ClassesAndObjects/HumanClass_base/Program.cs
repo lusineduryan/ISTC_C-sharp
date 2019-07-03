@@ -14,34 +14,34 @@ namespace HumanClass_base
         private double weight;
         private string sex;
 
-        public Human(string name1, string surname1, int age1, double weight1, string sex1)
+        public Human(string name, string surname, int age, double weight, string sex)
         {
-            name = name1;
-            surname = surname1;
-            age = age1;
-            weight = weight1;
-            sex = sex1;
+            this.name = name;
+            this.surname = surname;
+            this.age = age;
+            this.weight = weight;
+            this.sex = sex;
         }
 
-        public void SetName(string name1)
+        public void SetName(string name)
         {
-            name = name1;
+            this.name = name;
         }
-        public void SetSurname(string surname1)
+        public void SetSurname(string surname)
         {
-            surname = surname1;
+            this.surname = surname;
         }
-        public void SetAge(int age1)
+        public void SetAge(int age)
         {
-            age = age1;
+            this.age = age;
         }
-        public void SetWeight(double weight1)
+        public void SetWeight(double weight)
         {
-            weight = weight1;
+            this.weight = weight;
         }
-        public void SetSex(string sex1)
+        public void SetSex(string sex)
         {
-            sex = sex1;
+            this.sex = sex;
         }
 
         public void GetName()
@@ -70,19 +70,11 @@ namespace HumanClass_base
     {
         static void Main(string[] args)
         {
-            Human newHuman = null;
-            try
-            {
-                newHuman = new Human(Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToInt32(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
-
-            }
-            catch (InvalidCastException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            Human newHuman = new Human(Convert.ToString(Console.ReadKey()), Convert.ToString(Console.ReadKey()), Convert.ToInt32(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()), Convert.ToString(Console.ReadKey()));
             newHuman.GetName();
             newHuman.SetName("Cris");
-            newHuman.GetName();
+            newHuman.GetAge();
+            newHuman.SetAge(33);
         }
     }
 }
