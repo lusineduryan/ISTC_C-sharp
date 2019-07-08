@@ -16,7 +16,8 @@ namespace StringMethods
             Console.WriteLine(str.CompareTo("Lusine16"));
             Console.WriteLine(str.Contains("L"));
             Console.WriteLine(str.EndsWith("6"));
-            Console.WriteLine(str.Equals("Lusine17"));
+            Console.WriteLine("**************");
+            Console.WriteLine(str.Equals("Lusine61"));
             Console.WriteLine(str.GetHashCode());
             Console.WriteLine(str.GetType());
             Console.WriteLine(str.GetTypeCode());
@@ -27,7 +28,7 @@ namespace StringMethods
             Console.WriteLine(str.IsNormalized());
             Console.WriteLine(str.LastIndexOf("l"));
             Console.WriteLine(str.Length);
-            Console.WriteLine(str.Remove(3, 2));
+            Console.WriteLine(str.Remove(3,2));
             Console.WriteLine(str.Replace("u", "y"));
             string[] separatedString = str.Split(',');
             foreach (string i in separatedString) Console.WriteLine(i);
@@ -35,6 +36,8 @@ namespace StringMethods
             Console.WriteLine(str.Substring(3,5));
             Console.WriteLine(str.ToCharArray());
             Console.WriteLine(str.Trim());
+            
+            
         
             Console.ReadKey();
 
