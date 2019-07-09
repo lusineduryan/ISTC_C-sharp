@@ -12,6 +12,8 @@ namespace Hierarchy
         static void Main(string[] args)
         {
             Rabbit Peter = new Rabbit("Peter", 2, "plants", "white");
+            Animal A = new Animal("A", 3, "meat");
+           
         }
     }
 }
