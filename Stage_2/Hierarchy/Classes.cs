@@ -10,42 +10,44 @@ namespace Hierarchy
     {
         protected string name;
         private int age;
-        private string meal;
-        public Animal(string name, int age, string meal)
+        protected string meal;
+        public Animal(string name, int age)
         {
             this.name = name;
             this.age = age;
-            this.meal = meal;
         }
     }
     public class Herbivore : Animal
     {
         public void IsEating()
         {
-            Console.WriteLine("I eat only plants");
+            Console.WriteLine("I eat only plants!");
         }
-        public Herbivore(string name, int age, string meal) : base(name, age, "plants")
+        public Herbivore(string name, int age) : base(name, age)
         {
+            meal = "plants";
         }
     }
     public class Carnivore : Animal
     {
         public void IsEating()
         {
-            Console.WriteLine("I eat only meat");
+            Console.WriteLine("I eat only meat!");
         }
-        public Carnivore(string name, int age, string meal) : base(name, age, "meat")
+        public Carnivore(string name, int age) : base(name, age)
         {
+            meal = "meat";
         }
     }
     public class Omnivore : Animal
     {
         public void IsEating()
         {
-            Console.WriteLine("I eat both plants and meat");
+            Console.WriteLine("I eat both plants and meat!");
         }
-        public Omnivore(string name, int age, string meal) : base(name, age, "plants & meat")
+        public Omnivore(string name, int age) : base(name, age)
         {
+            meal = "plants & meat";
         }
     }
     public class Rabbit : Herbivore
@@ -55,9 +57,13 @@ namespace Hierarchy
         {
             Console.WriteLine("I run very fast!");
         }
-        public Rabbit(string name, int age, string meal, string furColor) : base(name, age, meal)
+        public Rabbit(string name, int age, string furColor) : base(name, age)
         {
             this.furColor = furColor;
+        }
+        public string GetMeal()
+        {
+            return meal;
         }
     }
     public class Lion : Carnivore
@@ -67,9 +73,13 @@ namespace Hierarchy
         {
             Console.WriteLine("I am the king of all animals!");
         }
-        public Lion(string name, int age, string meal, double roarAmplitude) : base(name, age, meal)
+        public Lion(string name, int age, double roarAmplitude) : base(name, age)
         {
             this.roarAmplitude = roarAmplitude;
+        }
+        public string GetMeal()
+        {
+            return meal;
         }
     }
     public class Hyena : Carnivore
@@ -79,9 +89,13 @@ namespace Hierarchy
         {
             Console.WriteLine("I am very dangerous!");
         }
-        public Hyena(string name, int age, string meal, double laughAmplitude) : base(name, age, meal)
+        public Hyena(string name, int age, double laughAmplitude) : base(name, age)
         {
             this.laughAmplitude = laughAmplitude;
+        }
+        public string GetMeal()
+        {
+            return meal;
         }
     }
     public class Man : Omnivore
@@ -91,9 +105,17 @@ namespace Hierarchy
         {
             Console.WriteLine("I am homo spaiens!");
         }
-        public Man(string name, int age, string meal, bool hasConscious) : base(name, age, meal)
+        public Man(string name, int age, bool hasConscious) : base(name, age)
         {
             this.hasConscious = hasConscious;
+        }
+        public string GetMeal()
+        {
+            return meal;
+        }
+        public bool ReallyHasConscious()
+        {
+            return hasConscious;
         }
     }
 }
