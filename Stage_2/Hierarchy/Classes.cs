@@ -8,7 +8,7 @@ namespace Hierarchy
 {
     public class Animal
     {
-        private string name;
+        protected string name;
         private int age;
         private string meal;
         public Animal(string name, int age, string meal)
@@ -86,14 +86,14 @@ namespace Hierarchy
     }
     public class Man : Omnivore
     {
-        public bool HasConscious { get; set; } = true;
+        private bool hasConscious = true;
         public void Say()
         {
             Console.WriteLine("I am homo spaiens!");
         }
         public Man(string name, int age, string meal, bool hasConscious) : base(name, age, meal)
         {
-            HasConscious = hasConscious;
+            this.hasConscious = hasConscious;
         }
     }
 }
