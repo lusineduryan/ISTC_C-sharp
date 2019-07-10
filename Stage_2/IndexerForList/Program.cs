@@ -15,7 +15,6 @@ namespace IndexerForList
             {
                 try
                 {
-
                     return array[index];
                 }
                 catch (IndexOutOfRangeException e)
