@@ -32,7 +32,8 @@ namespace Hierarchy
     {
         public void IsEating()
         {
-            Console.WriteLine("I eat only meat!");
+
+            onsole.WriteLine("I eat only meat!");
         }
         public Carnivore(string name, int age) : base(name, age)
         {
