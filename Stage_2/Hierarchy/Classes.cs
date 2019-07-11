@@ -21,6 +21,7 @@ namespace Hierarchy
     {
         public void IsEating()
         {
+
             Console.WriteLine("I eat only plants!");
         }
         public Herbivore(string name, int age) : base(name, age)
@@ -32,7 +33,6 @@ namespace Hierarchy
     {
         public void IsEating()
         {
-
            Console.WriteLine("I eat only meat!");
         }
         public Carnivore(string name, int age) : base(name, age)
