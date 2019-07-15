@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFinancialClass", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicInterfaces", "BasicInterfaces\BasicInterfaces.csproj", "{4CBA660E-1F81-48D9-80F6-032FB802B846}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexNumbers", "ComplexNumbers\ComplexNumbers.csproj", "{325117F7-1929-489D-92DE-8B78356B7B10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexNumbers_struct", "ComplexNumbers\ComplexNumbers_struct.csproj", "{325117F7-1929-489D-92DE-8B78356B7B10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event_MathOperations", "Event_MathOperations\Event_MathOperations.csproj", "{35A2AE90-19CF-4E91-BF9A-F14E5BA9A396}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodExtension", "MethodExtension\MethodExtension.csproj", "{35B59071-7AB4-4400-B2A4-78F5186A24C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMethods", "StringMethods\StringMethods.csproj", "{0ABDEAB9-81B9-45DA-9704-36F1CB05399B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexNumbers", "ComplexNumber\ComplexNumbers.csproj", "{1BA58298-56D3-46E5-88CA-217518D2DE29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{0ABDEAB9-81B9-45DA-9704-36F1CB05399B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ABDEAB9-81B9-45DA-9704-36F1CB05399B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ABDEAB9-81B9-45DA-9704-36F1CB05399B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA58298-56D3-46E5-88CA-217518D2DE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA58298-56D3-46E5-88CA-217518D2DE29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA58298-56D3-46E5-88CA-217518D2DE29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA58298-56D3-46E5-88CA-217518D2DE29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
