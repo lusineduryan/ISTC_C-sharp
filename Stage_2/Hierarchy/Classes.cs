@@ -16,10 +16,16 @@ namespace Hierarchy
             this.name = name;
             this.age = age;
         }
+        public virtual void Say()
+        {
+        }
+        public virtual void IsEating()
+        {
+        }
     }
     public class Herbivore : Animal
     {
-        public void IsEating()
+        public override void IsEating()
         {
             Console.WriteLine("I eat only plants!");
         }
@@ -30,7 +36,7 @@ namespace Hierarchy
     }
     public class Carnivore : Animal
     {
-        public void IsEating()
+        public override void IsEating()
         {
            Console.WriteLine("I eat only meat!");
         }
@@ -41,7 +47,7 @@ namespace Hierarchy
     }
     public class Omnivore : Animal
     {
-        public void IsEating()
+        public override void IsEating()
         {
             Console.WriteLine("I eat both plants and meat!");
         }
@@ -53,7 +59,7 @@ namespace Hierarchy
     public class Rabbit : Herbivore
     {
         private string furColor;
-        public void Say()
+        public override void Say()
         {
             Console.WriteLine("I run very fast!");
         }
@@ -69,7 +75,7 @@ namespace Hierarchy
     public class Lion : Carnivore
     {
         private double roarAmplitude;
-        public void Say()
+        public override void Say()
         {
             Console.WriteLine("I am the king of all animals!");
         }
@@ -85,7 +91,7 @@ namespace Hierarchy
     public class Hyena : Carnivore
     {
         private double laughAmplitude;
-        public void Say()
+        public override void Say()
         {
             Console.WriteLine("I am very dangerous!");
         }
@@ -97,11 +103,12 @@ namespace Hierarchy
         {
             return meal;
         }
+        public bool courage = false;
     }
     public class Man : Omnivore
     {
         private bool hasConscious = true;
-        public void Say()
+        public override void Say()
         {
             Console.WriteLine("I am homo spaiens!");
         }
