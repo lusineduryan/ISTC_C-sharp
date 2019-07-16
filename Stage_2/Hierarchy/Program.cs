@@ -48,7 +48,6 @@ namespace Hierarchy
             Eddy.IsEating();
 
             Console.ReadKey();
-
         }
     }
 }
