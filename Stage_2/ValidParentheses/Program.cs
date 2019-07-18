@@ -19,16 +19,16 @@ namespace ValidParentheses
                 else if (input[i] == '<') S.Push('>');
                 else
                 {
-                    if (S.Count == 0) return false;
+                    if (S.Count == 0
+                        && (input[i] == ')' || input[i] == '}' || input[i] == ']' || input[i] == '>'))
+                        return false;
+                    else if (S.Count == 0
+                        && (input[i] != ')' || input[i] != '}' || input[i] != ']' || input[i] != '>'))
+                        continue;
                     else if (input[i] == S.Peek()) S.Pop();
-                    //else if (input[i] == ')' && S.Peek() == input[i]) S.Pop();
-                    //else if (input[i] == '}' && S.Peek() == input[i]) S.Pop();
-                    //else if (input[i] == ']' && S.Peek() == input[i]) S.Pop();
-                    //else if (input[i] == '>' && S.Peek() == input[i]) S.Pop();
-                    else continue;
-                    //if (S.Count == 0 || c != S.Peek()) return false;
-                    //{(([])[])[]]} - wrong output, should be true
-                    //also problem with starting with numbers - outputs false
+                    else if (input[i] != S.Peek() 
+                        && (input[i] == ')' || input[i] == '}' || input[i] == ']' || input[i] == '>'))
+                        return false;
                 }
             }
             return S.Count == 0 ? true : false;
