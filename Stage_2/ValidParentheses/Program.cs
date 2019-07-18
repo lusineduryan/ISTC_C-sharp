@@ -20,10 +20,11 @@ namespace ValidParentheses
                 else
                 {
                     if (S.Count == 0) return false;
-                    else if (input[i] == '}' && S.Peek() == input[i]) S.Pop();
-                    else if (input[i] == ')' && S.Peek() == input[i]) S.Pop();
-                    else if (input[i] == ']' && S.Peek() == input[i]) S.Pop();
-                    else if (input[i] == '>' && S.Peek() == input[i]) S.Pop();
+                    else if (input[i] == S.Peek()) S.Pop();
+                    //else if (input[i] == ')' && S.Peek() == input[i]) S.Pop();
+                    //else if (input[i] == '}' && S.Peek() == input[i]) S.Pop();
+                    //else if (input[i] == ']' && S.Peek() == input[i]) S.Pop();
+                    //else if (input[i] == '>' && S.Peek() == input[i]) S.Pop();
                     else continue;
                     //if (S.Count == 0 || c != S.Peek()) return false;
                     //{(([])[])[]]} - wrong output, should be true
