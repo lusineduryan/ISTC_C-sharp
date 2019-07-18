@@ -8,26 +8,34 @@ namespace ValidParentheses
 {
     class Program
     {
-        static bool IsValid(char[] chars)
+        static bool IsValid(string input)
         {
             Stack<char> S = new Stack<char>();
-            foreach (char c in chars)
+            for (int i = 0; i < input.Length; i++)
             {
-                if (c == '{') S.Push('}');
-                else if (c == '(') S.Push(')');
-                else if (c == '[') S.Push(']');
-                else if (c == '<') S.Push('>');
+                if (input[i] == '{') S.Push('}');
+                else if (input[i] == '(') S.Push(')');
+                else if (input[i] == '[') S.Push(']');
+                else if (input[i] == '<') S.Push('>');
                 else
                 {
-                    if (S.Count == 0 || c != S.Peek()) return false;
-                    S.Pop();
+                    if (S.Count == 0) return false;
+                    else if (input[i] == '}' && S.Peek() == input[i]) S.Pop();
+                    else if (input[i] == ')' && S.Peek() == input[i]) S.Pop();
+                    else if (input[i] == ']' && S.Peek() == input[i]) S.Pop();
+                    else if (input[i] == '>' && S.Peek() == input[i]) S.Pop();
+                    else continue;
+                    //if (S.Count == 0 || c != S.Peek()) return false;
+                    //{(([])[])[]]} - wrong output, should be true
+                    //also problem with starting with numbers - outputs false
                 }
             }
             return S.Count == 0 ? true : false;
         }
+
         static void Main(string[] args)
         {
-            Console.WriteLine(IsValid(Console.ReadLine().ToCharArray()));
+            Console.WriteLine(IsValid(Console.ReadLine()));
             Console.ReadKey();
         }
     }
