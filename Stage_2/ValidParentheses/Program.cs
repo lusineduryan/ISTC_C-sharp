@@ -31,7 +31,6 @@ namespace ValidParentheses
                         return false;
                 }
             }
-
             return S.Count == 0 ? true : false;
         }
 
