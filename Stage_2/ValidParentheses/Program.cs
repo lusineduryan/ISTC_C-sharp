@@ -8,18 +8,18 @@ namespace ValidParentheses
 {
     class Program
     {
-        static bool matchBrackets(char[] chars)
+        static bool IsValid(char[] chars)
         {
-            Stack<int> S = new Stack<int>();
+            Stack<char> S = new Stack<char>();
             foreach (char c in chars)
             {
                 if (c == '{') S.Push('}');
                 else if (c == '(') S.Push(')');
                 else if (c == '[') S.Push(']');
+                else if (c == '<') S.Push('>');
                 else
                 {
-                    if (S.Count == 0 || c != (char)S.Peek())
-                        return false;
+                    if (S.Count == 0 || c != S.Peek()) return false;
                     S.Pop();
                 }
             }
@@ -27,7 +27,8 @@ namespace ValidParentheses
         }
         static void Main(string[] args)
         {
-            
+            Console.WriteLine(IsValid(Console.ReadLine().ToCharArray()));
+            Console.ReadKey();
         }
     }
 }
