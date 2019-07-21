@@ -32,6 +32,8 @@ namespace BasicInterfaces
             human1.Move();
             human1.Voice();
 
+            Say(human1);
+
             Interface2 human2 = new HumanClass() as Interface2;
             human2.Breathe();
 
@@ -45,6 +47,8 @@ namespace BasicInterfaces
             cat1.Move();
             cat1.Voice();
 
+            Say(cat1);
+
             Interface2 cat2 = new CatClass() as Interface2;
             cat2.Breathe();
 
@@ -52,8 +56,11 @@ namespace BasicInterfaces
             robot1.Move();
             robot1.Voice();
 
+            Say(robot1);
+
             Interface3 robot2 = new RobotClass() as Interface3;
             robot2.Think();
+            Console.ReadKey();
         }
     }
 }
