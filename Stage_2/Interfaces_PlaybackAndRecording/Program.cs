@@ -8,36 +8,67 @@ namespace Interfaces_PlaybackAndRecording
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void RecordFunc(IPlayable player1, IRecordable player2)
         {
-            IPlayable player1 = new Player();
-            IRecordable player2 = new Player();
-
-            Console.WriteLine("Please select one of the available commands: play, pause, stop or record!");
+            player2.Record();
+            Console.WriteLine("Please select the next command: pause or stop!");
             string action = Console.ReadLine();
             switch (action)
             {
-                case "play": player1.Play(); break;
-                case "record": player2.Record(); break;
-                case "pause":
-                    Console.WriteLine("Please specifiy if you want to play or record!");
-                    string details = Console.ReadLine();
-                    if (details == "play") player1.Pause();
-                    else if (details == "record") player2.Pause();
-                    else Console.WriteLine("Please select a valid command!");
+                case "pause": player2.Pause();
+                    Console.WriteLine("Please select your next step: stop or record again!");
+                    string actionNext = Console.ReadLine();
+                    switch (actionNext)
+                    {
+                        case "stop": player2.Stop(); break;
+                        case "record": RecordFunc(player1, player2); break;
+                        default: Console.WriteLine("Please select a valid command!"); break;
+                    }
                     break;
-                case "stop":
-                    Console.WriteLine("Please specifiy if you want to play or record!");
-                    string detailedcommand = Console.ReadLine();
-                    if (detailedcommand == "play") player1.Stop();
-                    else if (detailedcommand == "record") player2.Stop();
-                    else Console.WriteLine("Please select a valid command!");
+                case "stop": player2.Stop(); break;
+                default: Console.WriteLine("Please select a valid command!"); break;
+            }
+        }
+        public static void PlayFunc(IPlayable player1, IRecordable player2)
+        {
+            player1.Play();
+            Console.WriteLine("Please select the next command: record, pause or stop!");
+            string action = Console.ReadLine();
+            switch (action)
+            {
+                case "record": player2.Record(); RecordFunc(player1, player2); break;
+                case "pause": player1.Pause();
+                    Console.WriteLine("Please select your next step: stop or play again!");
+                    string actionNext = Console.ReadLine();
+                    switch (actionNext)
+                    {
+                        case "stop": player1.Stop(); break;
+                        case "play": PlayFunc(player1, player2); break;
+                        default: Console.WriteLine("Please select a valid command!"); break;
+                    }
                     break;
-                default: break;
+                case "stop": player1.Stop(); break;
+                default: Console.WriteLine("Please select a valid command!"); break;
+            }
+        }
+
+        static void Main(string[] args)
+        {
+
+            IPlayable player1 = new Player();
+            IRecordable player2 = new Player();
+
+            Console.WriteLine("Please select play to start!");
+            string select = Console.ReadLine();
+            while (select != "play")
+            {
+                Console.WriteLine("Please select play to start!");
+                select = Console.ReadLine();
             }
 
-            Console.ReadKey();
+            PlayFunc(player1, player2);
 
+            Console.ReadKey();
         }
     }
 }
