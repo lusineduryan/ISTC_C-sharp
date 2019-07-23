@@ -21,7 +21,6 @@ namespace AbstractFinancialClass
                 case 2: abstractInstrument = ABS; break;
                 default: break;
             }
-
             try
             {
                 Console.WriteLine(abstractInstrument.GetType());

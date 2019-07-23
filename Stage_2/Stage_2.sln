@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces_PlaybackAndRecor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction_FileHandling", "Abstraction_FileHandling\Abstraction_FileHandling.csproj", "{69EB0221-E82C-40E9-9B65-1A273D6FC90F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structures_3DPoint", "Structures_3DPoint\Structures_3DPoint.csproj", "{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{69EB0221-E82C-40E9-9B65-1A273D6FC90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69EB0221-E82C-40E9-9B65-1A273D6FC90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69EB0221-E82C-40E9-9B65-1A273D6FC90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
