@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction_FileHandling", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structures_3DPoint", "Structures_3DPoint\Structures_3DPoint.csproj", "{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTime", "DataTime\DataTime.csproj", "{A717A79F-4840-49A5-9B22-23D09ED28446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A717A79F-4840-49A5-9B22-23D09ED28446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A717A79F-4840-49A5-9B22-23D09ED28446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A717A79F-4840-49A5-9B22-23D09ED28446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A717A79F-4840-49A5-9B22-23D09ED28446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

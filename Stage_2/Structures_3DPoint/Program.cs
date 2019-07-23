@@ -10,6 +10,7 @@ namespace Structures_3DPoint
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
