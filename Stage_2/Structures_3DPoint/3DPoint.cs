@@ -25,5 +25,21 @@ namespace Structures_3DPoint
             Console.WriteLine(y);
             Console.WriteLine(z);
         }
+
+        public double DistanceFromOrigin()
+        {
+            return Math.Pow(x ^ 2 + y ^ 2 + z ^ 2, 1/2);
+        }
+
+        public double DistanceBetween2Points(_3DPoint point)
+        {
+            return Math.Pow((x - point.x) ^ 2 + (y - point.y) ^ 2 + (z - point.z) ^ 2, 1/2);
+        }
+
+        public double ScalarProduct(_3DPoint point)
+        {
+            return x * point.x + y * point.y + z * point.z;
+        }
+
     }
 }
