@@ -32,7 +32,6 @@ namespace CustomException
             catch (Exception e) when (e is WrongNumberException)
             {
                 Console.WriteLine(e.Message);
-                //throw;
             }
             Console.ReadKey();
         }
