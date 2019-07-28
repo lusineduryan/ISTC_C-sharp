@@ -13,7 +13,6 @@ namespace HumanClass
         private int age;
         private double weight;
         private string sex;
-
         
         public Human(string name, string surname, int age, double weight, string sex)
         {
