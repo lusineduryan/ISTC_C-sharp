@@ -32,6 +32,7 @@ namespace NestedClasses
             return EURGBP.ForwardRate(0.8736, -0.00257, 0.0099263) - Strike / (1 + EURGBP.DomesticInterestRate);
         }
     }
+
     class Program
     {
         static void Main(string[] args)
