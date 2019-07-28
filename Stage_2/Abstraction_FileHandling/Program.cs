@@ -10,7 +10,8 @@ namespace Abstraction_FileHandling
     {
         public static void FileType(AbstractHandler file)
         {
-            file.Type();
+            if (file != null) file.Type();
+            else throw new NullReferenceException();
         }
 
         static void Main(string[] args)
@@ -29,11 +30,19 @@ namespace Abstraction_FileHandling
                 default: Console.WriteLine("Please enter a valid file format!"); break;
             }
 
-            FileType(file);
-            file.Save();
-            file.Change();
-            file.Open();
-            file.Create();
+            try
+            {
+                FileType(file);
+                file.Save();
+                file.Change();
+                file.Open();
+                file.Create();
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("Should've been DOC, XML or TXT!");
+            }
+            
             Console.ReadKey();
         }
     }

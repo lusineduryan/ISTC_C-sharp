@@ -10,7 +10,15 @@ namespace MethodExtension
     {
         static void Main(string[] args)
         {
-            int number = Convert.ToInt32(Console.ReadLine());
+            int number = 0;
+            try
+            {
+                number = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Please enter an integer number!");
+            }
             int sum = number.SumOfDigits();
             Console.WriteLine(sum);
             string str = Console.ReadLine();

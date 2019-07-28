@@ -16,9 +16,9 @@ namespace ComplexNumbers
             this.ImaginaryPart = imaginaryPart;
         }
 
-        public string number(double realPart, double imaginaryPart)
+        public string number()
         {
-            return $"{realPart}+{imaginaryPart}*i";
+            return $"{RealPart}+{ImaginaryPart}*i";
         }
     }
     class Program
@@ -28,21 +28,29 @@ namespace ComplexNumbers
             ComplexNumber number1 = new ComplexNumber(0, 0);
             try
             {
-               number1 = new ComplexNumber(Convert.ToDouble(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()));
+               number1 = new ComplexNumber(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
 
             }
             catch (InvalidCastException e)
             {
-                Console.WriteLine("Please enter a double type parameter!");
+                Console.WriteLine("Please enter a number!");
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Please enter a double type number!");
             }
             ComplexNumber number2 = new ComplexNumber(0, 0);
             try
             {
-               number2 = new ComplexNumber(Convert.ToDouble(Console.ReadKey()), Convert.ToDouble(Console.ReadKey()));
+               number2 = new ComplexNumber(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
             }
             catch (InvalidCastException e)
             {
-                Console.WriteLine("Please enter a double type parameter!");
+                Console.WriteLine("Please enter a number!");
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Please enter a double type number!");
             }
 
             OperationsClass operations = new OperationsClass();
@@ -52,6 +60,7 @@ namespace ComplexNumbers
             ComplexNumber product = operations.Product(number1, number2);
             ComplexNumber division = operations.Division(number1, number2);
             double module = operations.Module(number1);
+            Console.ReadKey();
 
         }
     }

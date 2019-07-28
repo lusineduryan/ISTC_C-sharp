@@ -16,9 +16,9 @@ namespace ComplexNumber
             ImaginaryPart = imaginaryPart;
         }
 
-        public string NumberView(double realPart, double imaginaryPart)
+        public string NumberView()
         {
-            return $"{realPart}+{imaginaryPart}*i";
+            return $"{RealPart}+{ImaginaryPart}*i";
         }
     }
 }
