@@ -32,6 +32,7 @@ namespace FixedIncome
         }
 
     }
+
     class Program
     {
         static void Main(string[] args)
