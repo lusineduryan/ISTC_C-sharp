@@ -28,8 +28,8 @@ namespace ISTC.SecondStage.OOP.Inheritance.Example
 
         }
 
-        private int l;
-        private int h;
+        public int l;
+        public int h;
 
         public Rectangle(int l, int h) : base(4)
         {
@@ -61,6 +61,8 @@ namespace ISTC.SecondStage.OOP.Inheritance.Example
     public class Square : Rectangle
     {
         private int x;
+        static Square()
+        { }
         public Square(int x) : base(x, x)
         {
             this.x = x;
@@ -77,7 +79,17 @@ namespace ISTC.SecondStage.OOP.Inheritance.Example
         static void Main(string[] args)
         {
             Square sq = new Square(5);
-            Rectangle rec = new Rectangle(4, 6);
+            Rectangle rec1 = new Rectangle(4, 6);
+            Rectangle rec2 = new Rectangle(4, 6);
+            Console.WriteLine(rec1 == rec2);
+            rec1 = rec2;
+            Console.WriteLine(rec1 == rec2);
+            Console.WriteLine(rec2.l);
+            rec1.l = 8;
+            Console.WriteLine(rec2.l);
+            Console.WriteLine(rec1.Equals(rec2));
+            Console.WriteLine(ReferenceEquals(rec1, rec2));
+            Console.ReadKey();
            
         }
     }
