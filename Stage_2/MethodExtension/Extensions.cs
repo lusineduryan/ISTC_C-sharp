@@ -18,7 +18,6 @@ namespace MethodExtension
             }
             return sum;
         }
-
         public static int NumberOfAs(this string str)
         {
             int count = 0;
