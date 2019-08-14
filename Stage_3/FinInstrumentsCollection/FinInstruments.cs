@@ -10,7 +10,7 @@ namespace FinInstrumentsCollection
     public class FinInstruments : IList, ICollection, IEnumerable, IEnumerator
     {
         private int _initialposition = -1;
-        public  static List<FinInstrument> FinInstrumentsList;
+        public static List<FinInstrument> FinInstrumentsList;
         public static void BuildCollection()
         {
             FinInstrument bond = new FinInstrument("T-bill", "long", 2020, 5.23);
