@@ -9,60 +9,34 @@ namespace PrintingAllFiles
 {
     class Program
     {
-        public static void PrintAllFiles (string directoryName)
-        {
-            string[] directories = Directory.GetDirectories(directoryName);
-            string[] files = Directory.GetFiles(directoryName);
-
-            try
-            {
-                foreach (string directory in directories)
-                {
-                    Console.WriteLine(directory);
-                    PrintAllFiles(directory);
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            try
-            {
-                foreach (string file in files)
-                {
-                    Console.WriteLine(file);
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-        }
-
         static void Main(string[] args)
         {
-            string[] drives = Directory.GetLogicalDrives();
+            /* string[] drives = Directory.GetLogicalDrives();
 
-            foreach (string drive in drives)
-            {
-                Console.WriteLine(drive);
-            }
+             foreach (string drive in drives)
+             {
+                 Console.WriteLine(drive);
+             }
 
-            string generalDrive = Console.ReadLine().ToUpper();
-            generalDrive += ":\\";
+             string generalDrive = Console.ReadLine().ToUpper() + ":\\";
 
-            if (drives.Contains(generalDrive))
+             if (drives.Contains(generalDrive))
+             {
+                 AllDirectories.PrintDirectories(generalDrive);
+             }
+             else
+             {
+                 Console.WriteLine("Please enter a valid directory name!");
+             }
+             Console.ReadKey(); */
+
+            string[] allDirectories = Directory.GetDirectories(@"C:\Users");
+            foreach (string directory in allDirectories)
             {
-                PrintAllFiles(generalDrive);
-            }
-            else
-            {
-                Console.WriteLine("Please enter a valid directory name!");
+                Console.WriteLine(directory);
+                AllFilesInDirectory.PrintAllFilesInDirectory(directory);
             }
             Console.ReadKey();
-
         }
     }
 }
