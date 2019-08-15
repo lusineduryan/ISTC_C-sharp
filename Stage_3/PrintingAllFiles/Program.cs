@@ -9,26 +9,26 @@ namespace PrintingAllFiles
 {
     class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
             string[] drives = Directory.GetLogicalDrives();
 
-             foreach (string drive in drives)
-             {
-                 Console.WriteLine(drive);
-             }
+            foreach (string drive in drives)
+            {
+                Console.WriteLine(drive);
+            } 
 
-             string generalDrive = Console.ReadLine().ToUpper() + ":\\";
+            string generalDrive = Console.ReadLine().ToUpper() + ":\\";
 
-             if (drives.Contains(generalDrive))
-             {
-                 AllDirectories.PrintDirectories(generalDrive);
-             }
-             else
-             {
-                 Console.WriteLine("Please enter a valid directory name!");
-             }
-             Console.ReadKey();
+            if (drives.Contains(generalDrive))
+            {
+                AllDirectories.PrintFiles(generalDrive);
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid directory name!");
+            }
+            Console.ReadKey();
         }
     }
 }

@@ -9,22 +9,22 @@ namespace PrintingAllFiles
 {
     public class AllDirectories
     {
-        public static void PrintDirectories (string directoryName)
+        public static void PrintFiles(string path)
         {
-            string[] directories = Directory.GetDirectories(directoryName);
-            try
+            string[] files = Directory.GetFiles(path);
+            var paths = Directory.GetDirectories(path).Where(d => !d.EndsWith("Settings") && !d.EndsWith("Bin") &&
+                                                                  !d.EndsWith("Cache") && !d.EndsWith("Information"));
+            foreach (string file in files)
             {
-                foreach (string directory in directories)
-                {
-                    Console.Write("Direcory: ");
-                    Console.WriteLine(directory);
-                    Console.WriteLine($"All files in directory {directory}: ");
-                    AllFilesInDirectory.PrintAllFilesInDirectory(directory);
-                }
+                Console.WriteLine(file);
             }
-            catch (Exception e)
+
+            foreach (string dir in paths)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Directory:");
+                Console.WriteLine(dir);
+                Console.WriteLine("Files of the directory:");
+                PrintFiles(dir);
             }
         }
     }
