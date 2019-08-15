@@ -12,6 +12,8 @@ namespace FinInstrumentsCollection
         static void Main(string[] args)
         {
             FinInstruments.BuildCollection();
+            FinInstruments finInst = new FinInstruments();
+
             foreach (FinInstrument financialInstrument in FinInstruments.FinInstrumentsList)
             {
                 Console.WriteLine(financialInstrument.name);
