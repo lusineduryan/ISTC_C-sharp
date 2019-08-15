@@ -11,7 +11,7 @@ namespace PrintingAllFiles
     {
         static void Main(string[] args)
         {
-            /* string[] drives = Directory.GetLogicalDrives();
+            string[] drives = Directory.GetLogicalDrives();
 
              foreach (string drive in drives)
              {
@@ -28,15 +28,7 @@ namespace PrintingAllFiles
              {
                  Console.WriteLine("Please enter a valid directory name!");
              }
-             Console.ReadKey(); */
-
-            string[] allDirectories = Directory.GetDirectories(@"C:\Users");
-            foreach (string directory in allDirectories)
-            {
-                Console.WriteLine(directory);
-                AllFilesInDirectory.PrintAllFilesInDirectory(directory);
-            }
-            Console.ReadKey();
+             Console.ReadKey();
         }
     }
 }
