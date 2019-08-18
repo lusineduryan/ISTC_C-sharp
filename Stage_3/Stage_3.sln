@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brackets", "Brackets\Bracke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinInstrumentsCollection", "FinInstrumentsCollection\FinInstrumentsCollection.csproj", "{21A8BC79-2230-4E78-984D-F86DC7DA36E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization_Deserialization", "Serialization_Deserialization\Serialization_Deserialization.csproj", "{17B409A5-D989-4F78-992F-1DD09DE04465}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{21A8BC79-2230-4E78-984D-F86DC7DA36E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A8BC79-2230-4E78-984D-F86DC7DA36E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A8BC79-2230-4E78-984D-F86DC7DA36E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B409A5-D989-4F78-992F-1DD09DE04465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B409A5-D989-4F78-992F-1DD09DE04465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B409A5-D989-4F78-992F-1DD09DE04465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B409A5-D989-4F78-992F-1DD09DE04465}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
