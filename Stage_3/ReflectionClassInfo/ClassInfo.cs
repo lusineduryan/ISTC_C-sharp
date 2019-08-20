@@ -71,5 +71,20 @@ namespace ReflectionClassInfo
         {
             return Activator.CreateInstance(classType);
         }
+
+        public static void AllCalls()
+        {
+            string assemblyPath = ConfigurationManager.AppSettings["assemblyPath"];
+            Assembly currentAssembly = Assembly.LoadFile(assemblyPath);
+            GetAllClasses(currentAssembly);
+            Type classType = ClassInfo.GetClassState("Hierarchy.Animal", currentAssembly);
+            object classInstance = ClassInfo.Instantiation(classType);
+
+            GetAllFieldsInfo(classType);
+            GetAllProperties(classType);
+            GetAllConstructors(classType);
+            GetAllMethods(classType);
+            Invoker(classType);
+        }
     }
 }

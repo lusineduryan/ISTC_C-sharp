@@ -13,17 +13,7 @@ namespace ReflectionClassInfo
     {
         static void Main(string[] args)
         {
-            string assemblyPath = ConfigurationManager.AppSettings["assemblyPath"];
-            Assembly currentAssembly = Assembly.LoadFile(assemblyPath);
-            ClassInfo.GetAllClasses(currentAssembly);
-            Type classType = ClassInfo.GetClassState("Hierarchy.Animal", currentAssembly);
-            object classInstance = ClassInfo.Instantiation(classType);
-
-            ClassInfo.GetAllFieldsInfo(classType);
-            ClassInfo.GetAllProperties(classType);
-            ClassInfo.GetAllConstructors(classType);
-            ClassInfo.GetAllMethods(classType);
-
+            ClassInfo.AllCalls();
             Console.ReadKey();
         }
     }
