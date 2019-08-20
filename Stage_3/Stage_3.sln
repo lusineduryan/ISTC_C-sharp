@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigTypes", "Configuratio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionClassInfo", "ReflectionClassInfo\ReflectionClassInfo.csproj", "{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAttribute", "CustomAttribute\CustomAttribute.csproj", "{4FF336F4-168C-4374-A677-35E6BB664B35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF336F4-168C-4374-A677-35E6BB664B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF336F4-168C-4374-A677-35E6BB664B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF336F4-168C-4374-A677-35E6BB664B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF336F4-168C-4374-A677-35E6BB664B35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
