@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization_Deserializati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigTypes", "Configuration\ConfigTypes.csproj", "{683089D5-085C-4D92-8AD1-E80772021935}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionClassInfo", "ReflectionClassInfo\ReflectionClassInfo.csproj", "{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{683089D5-085C-4D92-8AD1-E80772021935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{683089D5-085C-4D92-8AD1-E80772021935}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{683089D5-085C-4D92-8AD1-E80772021935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE29AB6-04D9-4998-A3DB-F48D5462FC69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

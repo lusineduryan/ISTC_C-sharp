@@ -11,6 +11,7 @@ namespace Hierarchy
         protected string name;
         private int age;
         protected string meal;
+        public Animal() {}
         public Animal(string name, int age)
         {
             this.name = name;
@@ -18,9 +19,11 @@ namespace Hierarchy
         }
         public virtual void Say()
         {
+            Console.WriteLine("I am an animal.");
         }
         public virtual void IsEating()
         {
+            Console.WriteLine("I can eat anythong.");
         }
     }
     public class Herbivore : Animal
