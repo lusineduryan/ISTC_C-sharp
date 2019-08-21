@@ -16,5 +16,12 @@ namespace CustomAttribute
             int param2 = exceptionAttribute.Conversion(arg2);
             return exceptionAttribute.Division(param1, param2);
         }
+
+        public static int GetItem(Type t, int[] arg1, string arg2)
+        {
+            ExceptionHandlingAttribute exceptionAttribute = (ExceptionHandlingAttribute)Attribute.GetCustomAttribute(t, typeof(ExceptionHandlingAttribute));
+            int index = exceptionAttribute.Conversion(arg2);
+            return exceptionAttribute.GetArrayMember(arg1, index);
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace CustomAttribute
             }
             catch (IndexOutOfRangeException e)
             {
-                Console.WriteLine("Your index is exceeding your array size");
+                Console.WriteLine("Your index is exceeding your array size!");
                 return 0;
             }
         }
