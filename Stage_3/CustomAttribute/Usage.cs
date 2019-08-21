@@ -9,20 +9,6 @@ namespace CustomAttribute
     [ExceptionHandling]
     public static class Usage
     {
-        public static void GetConversion(Type t)
-        {
-            ExceptionHandlingAttribute exceptionAttribute = (ExceptionHandlingAttribute) Attribute.GetCustomAttribute(t, typeof(ExceptionHandlingAttribute));
-            string inputString = Console.ReadLine();
-            if (exceptionAttribute == null)
-            {
-                Console.WriteLine("Attribute not found!");
-            }
-            else
-            {
-                Console.WriteLine(exceptionAttribute.Conversion(inputString));
-            }
-        }
-
         public static int GetDivision(Type t, string arg1, string arg2)
         {
             ExceptionHandlingAttribute exceptionAttribute = (ExceptionHandlingAttribute)Attribute.GetCustomAttribute(t, typeof(ExceptionHandlingAttribute));
