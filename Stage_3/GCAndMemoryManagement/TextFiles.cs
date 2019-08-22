@@ -11,7 +11,6 @@ namespace GCAndMemoryManagement
     {
         private void ReleaseUnmanagedResources()
         {
-            
         }
 
         public void Dispose()
