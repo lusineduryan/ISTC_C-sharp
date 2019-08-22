@@ -11,7 +11,7 @@ namespace GCAndMemoryManagement
     {
         private void ReleaseUnmanagedResources()
         {
-            
+            Console.WriteLine("The file is closed now!");
         }
 
         public void Dispose()
