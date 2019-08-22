@@ -43,5 +43,10 @@ namespace GCAndMemoryManagement
             memory = GC.GetTotalMemory(false);
             return file.ReadToEnd();
         }
+
+        public string NewText(string text)
+        {
+            return text + "!";
+        }
     }
 }

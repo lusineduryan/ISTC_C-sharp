@@ -23,8 +23,10 @@ namespace GCAndMemoryManagement
             using (TextFiles textFile = new TextFiles())
             {
                 StreamReader file = textFile.CreateTextFileR(ConfigurationManager.AppSettings["path"] + "\\Lucy.txt", out memory);
-                textFile.ReadFromTextFile(file, out memory);
+                string text = textFile.ReadFromTextFile(file, out memory);
+                Console.WriteLine(textFile.NewText(text));
             }
+            Console.ReadKey();
         }
     }
 }
