@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Configuration;
 
 namespace GCAndMemoryManagement
 {
@@ -10,7 +12,19 @@ namespace GCAndMemoryManagement
     {
         static void Main(string[] args)
         {
-
+            long memory = 0;
+            using (TextFiles textFile = new TextFiles())
+            {
+                StreamWriter file = textFile.CreateTextFileW(ConfigurationManager.AppSettings["path"], "Lucy.txt", out memory);
+                textFile.WriteInTextFile(ConfigurationManager.AppSettings["text"], file, out memory);
+                file.Flush();
+                file.Close();
+            }
+            using (TextFiles textFile = new TextFiles())
+            {
+                StreamReader file = textFile.CreateTextFileR(ConfigurationManager.AppSettings["path"] + "\\Lucy.txt", out memory);
+                textFile.ReadFromTextFile(file, out memory);
+            }
         }
     }
 }
