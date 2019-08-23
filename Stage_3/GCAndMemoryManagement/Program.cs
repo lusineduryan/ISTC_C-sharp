@@ -19,7 +19,7 @@ namespace GCAndMemoryManagement
                 Console.Write("Please write a text in the file: ");
                 string inputText = Console.ReadLine();
                 textFile.WriteInTextFile(inputText, file, out memory);
-                //file.Dispose();
+                file.Dispose();
             }
             using (TextFiles textFile = new TextFiles())
             {
@@ -27,6 +27,7 @@ namespace GCAndMemoryManagement
                 string text = textFile.ReadFromTextFile(file, out memory);
                 Console.WriteLine($"The following text retrieved from the file: {text}");
                 Console.WriteLine($"Modified text is: {textFile.NewText(text)}");
+                file.Dispose();
             }
             Console.ReadKey();
         }
