@@ -13,7 +13,7 @@ namespace MultiThreading
     {
         static void Main(string[] args)
         {
-            Task[] array = new Task[5];
+            Task[] array = new Task[3];
             TaskBuilding task = new TaskBuilding();
             task.BuidTasks(array);
             Console.ReadKey();
