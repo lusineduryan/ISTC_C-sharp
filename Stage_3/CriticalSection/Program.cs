@@ -10,8 +10,9 @@ namespace CriticalSection
     {
         static void Main(string[] args)
         {
-           // MutexSection.Process();
+            MutexSection.Process();
             MonitorSection.TaskCreator();
+            SemaphoreSection.MainProcess();
             Console.ReadKey();
         }
     }
