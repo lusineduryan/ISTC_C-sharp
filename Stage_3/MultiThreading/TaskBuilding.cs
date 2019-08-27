@@ -19,11 +19,12 @@ namespace MultiThreading
         {
             for (int i = 0; i < array.Length; i++)
             {
+                var k = i;
                 array[i] = Task.Factory.StartNew
                 (
                     () =>
                     {
-                        Console.WriteLine($"{Square(i)} - {Thread.CurrentThread.ManagedThreadId}");
+                        Console.WriteLine($"{Square(k)} - {Thread.CurrentThread.ManagedThreadId}");
                     }
                 );
             }
