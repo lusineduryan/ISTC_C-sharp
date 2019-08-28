@@ -34,9 +34,8 @@ namespace CriticalSection
                 newThread.Start(i);
             }
             Thread.Sleep(1000);
-            Console.WriteLine("Main thread calls Release(3) and allows the waiting threads to enter the semaphore, up to 3 at a time!");
+            Console.WriteLine("The waiting threads are allowed to enter the semaphore, up to 3 at a time!");
             pool.Release(3);
-            Console.WriteLine("Main thread exits!");
         }
     }
 }
