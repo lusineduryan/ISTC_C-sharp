@@ -26,7 +26,7 @@ namespace CriticalSection
             Console.WriteLine($"Thread {number} previous semaphore count: {pool.Release()}");
         }
 
-        public static void MainProcess()
+        public static void Mainprocess()
         {
             for (int i = 0; i < 5; i++)
             {
