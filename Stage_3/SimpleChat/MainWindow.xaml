@@ -1,0 +1,16 @@
+﻿<Window x:Class="SimpleChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleChat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="352,268,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.086,1.794" Click="Chat"/>
+        <Button Content="Send to Chloe" HorizontalAlignment="Left" Margin="469,334,0,67" VerticalAlignment="Center" Width="100" RenderTransformOrigin="1.086,1.794" Click="AnnaMsg"/>
+        <Button Content="Send to Anna" HorizontalAlignment="Left" Margin="220,334,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="1.086,1.794" Click="ChloeMsg"/>
+        <TextBox Name="Anna" Height="35" Margin="192,78,241.6,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+        <TextBox Name="Chloe" Height="35" Margin="192,164,241.6,221" TextWrapping="Wrap" Text="" VerticalAlignment="Center" />
+    </Grid>
+</Window>
