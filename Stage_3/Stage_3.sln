@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading", "MultiThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriticalSection", "CriticalSection\CriticalSection.csproj", "{5387D733-E405-4D20-AA57-44621DA1CFA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventForCurrentTime", "EventForCurrentTime\EventForCurrentTime.csproj", "{D50FD82E-22F0-459D-8FBB-9A288BB42A2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{5387D733-E405-4D20-AA57-44621DA1CFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5387D733-E405-4D20-AA57-44621DA1CFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5387D733-E405-4D20-AA57-44621DA1CFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D50FD82E-22F0-459D-8FBB-9A288BB42A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50FD82E-22F0-459D-8FBB-9A288BB42A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50FD82E-22F0-459D-8FBB-9A288BB42A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50FD82E-22F0-459D-8FBB-9A288BB42A2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
