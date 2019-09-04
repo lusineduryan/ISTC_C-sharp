@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventForCurrentTime", "Even
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChat", "SimpleChat\SimpleChat.csproj", "{998AABFE-8D39-46B6-B4EC-C3224245D8FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{53F5971B-4BA0-42AD-983E-E294486BD0AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{998AABFE-8D39-46B6-B4EC-C3224245D8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{998AABFE-8D39-46B6-B4EC-C3224245D8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{998AABFE-8D39-46B6-B4EC-C3224245D8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F5971B-4BA0-42AD-983E-E294486BD0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F5971B-4BA0-42AD-983E-E294486BD0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F5971B-4BA0-42AD-983E-E294486BD0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F5971B-4BA0-42AD-983E-E294486BD0AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
