@@ -10,7 +10,7 @@ namespace GenericBubbleSorting
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 5,3,1,4,2 };
+            int[] numbers = { 5,3,1,4,2,6 };
             Sorting<int>.BubbleSort(ref numbers);
             foreach (var item in numbers)
             {
