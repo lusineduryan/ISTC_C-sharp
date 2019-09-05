@@ -41,8 +41,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction_FileHandling", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structures_3DPoint", "Structures_3DPoint\Structures_3DPoint.csproj", "{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime", "DataTime\DateTime.csproj", "{A717A79F-4840-49A5-9B22-23D09ED28446}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectMethodsOverriding", "ObjectMethodsOverriding\ObjectMethodsOverriding.csproj", "{BF4AFCDA-3968-4134-AE46-237B7433E42C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticVsInstanceConstructors", "StaticVsInstanceConstructors\StaticVsInstanceConstructors.csproj", "{9D579459-F5DB-402F-B646-1CAB4226F1D9}"
@@ -131,10 +129,6 @@ Global
 		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF200220-0F0A-4D95-A3DD-8CFFFE3B9E33}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A717A79F-4840-49A5-9B22-23D09ED28446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A717A79F-4840-49A5-9B22-23D09ED28446}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A717A79F-4840-49A5-9B22-23D09ED28446}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A717A79F-4840-49A5-9B22-23D09ED28446}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF4AFCDA-3968-4134-AE46-237B7433E42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF4AFCDA-3968-4134-AE46-237B7433E42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF4AFCDA-3968-4134-AE46-237B7433E42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
