@@ -6,25 +6,27 @@ using System.Threading.Tasks;
 
 namespace GenericBubbleSorting
 {
-    public class Sorting
+    public class Sorting<T> where T: struct
     {
-        public static Sorting operator +(arg1, arg2)
+        private static void Swap(ref T arg1, ref T arg2)
         {
-            try
-            {
-                return arg1 + arg2;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            arg1 = (dynamic)arg1 + (dynamic)arg2;
+            arg2 = (dynamic)arg1 - (dynamic)arg2;
+            arg1 = (dynamic)arg1 - (dynamic)arg2;
         }
 
-        private static void Swap<T>(ref T arg1, ref T arg2)
+        public static void BubbleSort(ref T[] arg)
         {
-            arg1 = arg1 + arg2;
-
+            for (int i = 0; i < arg.Length - 1; i++)
+            {
+                for (int j = 0; j < arg.Length - 1; j++)
+                {
+                    if ((dynamic)arg[j] > (dynamic)arg[j + 1])
+                    {
+                        Swap(ref arg[j], ref arg[j + 1]);
+                    }
+                }
+            }
         }
     }
 }
