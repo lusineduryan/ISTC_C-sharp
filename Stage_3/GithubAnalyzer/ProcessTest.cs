@@ -3,23 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 
 namespace GithubAnalyzer
 {
-    public class Process
+    class ProcessTest
     {
         public static List<UserInfo> GetWebData()
         {
-            WebClient source = new WebClient();
-            string content = "";
             List<UserInfo> users = new List<UserInfo>();
             for (int i = 0; i < 10; i++)
             {
-                content = source.DownloadString("https://api.github.com//search//users?q=location:armenia&page=" + i + "&per_page=100");
-                var model1 = JsonConvert.DeserializeObject<TotalInfo>(content);
+                var model1 = JsonConvert.DeserializeObject<TotalInfo>(File.ReadAllText(Environment.CurrentDirectory + "//GithubData.json"));
                 users.AddRange(model1.items);
             }
             return users;
@@ -27,31 +23,28 @@ namespace GithubAnalyzer
 
         public static List<UserExtended> GetUserData()
         {
-            WebClient source = new WebClient();
             List<UserInfo> users = GetWebData();
             List<UserExtended> profiles = new List<UserExtended>();
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 10; i++)
             {
-                string urls = source.DownloadString(users[i].url);
-                profiles.AddRange(JsonConvert.DeserializeObject<List<UserExtended>>(urls));
+                profiles.AddRange(JsonConvert.DeserializeObject<List<UserExtended>>(File.ReadAllText(Environment.CurrentDirectory + "//ProfileData.json")));
             }
             return profiles;
         }
 
         public static List<RepoInfo> GetRepoData()
         {
-            WebClient source = new WebClient();
             List<UserInfo> users = GetWebData();
             List<List<RepoInfo>> reposList = new List<List<RepoInfo>>();
             List<RepoInfo> repos = new List<RepoInfo>();
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 3; i++)
             {
-                string repoUrls = source.DownloadString(users[i].repos_url);
-                reposList.AddRange(JsonConvert.DeserializeObject<List<List<RepoInfo>>>(repoUrls));
-                foreach (var item in reposList)
-                {
-                    repos.AddRange(item);
-                }
+                var otherModel = JsonConvert.DeserializeObject<List<List<RepoInfo>>>(File.ReadAllText(Environment.CurrentDirectory + "//RepoData.json"));
+                reposList.AddRange(otherModel);
+            }
+            foreach (var item in reposList)
+            {
+                repos.AddRange(item);
             }
             return repos;
         }
@@ -70,13 +63,12 @@ namespace GithubAnalyzer
             return repos.Count(s => s.created_at.Year == 2019);
         }
 
-        public static object MostStarredProfiles()
+        public static dynamic MostStarredProfiles()
         {
             List<RepoInfo> repos = GetRepoData();
             var res = repos.GroupBy(s => s.owner.login).Select(s => new { Stars = s.Sum(ss => ss.stargazers_count), User = s.Key }).ToList();
             var newRes = res.OrderByDescending(s => s.Stars).Take(20);
             return newRes;
-
         }
     }
 }

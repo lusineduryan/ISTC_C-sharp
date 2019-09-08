@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Models.cs" />
     <Compile Include="Process.cs" />
+    <Compile Include="ProcessTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

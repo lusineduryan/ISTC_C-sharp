@@ -72,12 +72,12 @@ namespace GithubAnalyzer
         public DateTime updated_at { get; set; }
     }
 
-    public class RepoInfo
-    {
-        public Class1[] Property1 { get; set; }
-    }
+    /* public class RepoInfo
+     {
+         public Class1[] Property1 { get; set; }
+     }*/
 
-    public class Class1
+    public class RepoInfo
     {
         public int id { get; set; }
         public string node_id { get; set; }
