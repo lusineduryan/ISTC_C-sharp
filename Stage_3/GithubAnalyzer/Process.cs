@@ -76,7 +76,6 @@ namespace GithubAnalyzer
             var res = repos.GroupBy(s => s.owner.login).Select(s => new { Stars = s.Sum(ss => ss.stargazers_count), User = s.Key }).ToList();
             var newRes = res.OrderByDescending(s => s.Stars).Take(20);
             return newRes;
-
         }
     }
 }
