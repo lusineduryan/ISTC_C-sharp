@@ -25,7 +25,6 @@ namespace GithubAnalyzer
             return users;
         }
 
-
         public static List<UserExtended> GetUserData()
         {
             WebClient source = new WebClient();
