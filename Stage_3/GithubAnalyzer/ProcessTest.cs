@@ -32,7 +32,6 @@ namespace GithubAnalyzer
             return profiles;
         }
 
-
         public static List<RepoInfo> GetRepoData()
         {
             List<UserInfo> users = GetWebData();
