@@ -11,6 +11,7 @@ namespace Stage_4
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
