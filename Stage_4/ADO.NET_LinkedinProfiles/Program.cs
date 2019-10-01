@@ -10,6 +10,15 @@ namespace ADO.NET_LinkedinProfiles
     {
         static void Main(string[] args)
         {
-        }
+            List<Profiles> profiles = SQLConnector.GetProfilesInfo();
+            foreach (var item in profiles)
+            {
+                Console.WriteLine(item.Username + " " +  item.FullName);
+            }
+
+            SQLConnector.WriteOnTable(profiles);
+
+            Console.ReadKey();
+          }
     }
 }

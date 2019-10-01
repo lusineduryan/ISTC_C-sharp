@@ -11,7 +11,7 @@ namespace ADO.NET_LinkedinProfiles
         public int Id { get; set; }
         public string Username { get; set; }
         public string FullName { get; set; }
-        public string Speciality { get; set; }
+        public string Specialty { get; set; }
         public string Location { get; set; }
         public string Education { get; set; }
         public string Company { get; set; }
@@ -19,9 +19,9 @@ namespace ADO.NET_LinkedinProfiles
         public string Website { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-        public DateTime Birthday { get; set; }
+        public DateTime? Birthday { get; set; }
         public string Connected { get; set; }
         public string ImageUrl { get; set; }
-        public DateTime LastUpdate { get; set; }
+        public DateTime? LastUpdate { get; set; }
     }
 }
