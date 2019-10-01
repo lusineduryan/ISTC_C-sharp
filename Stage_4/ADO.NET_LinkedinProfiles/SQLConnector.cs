@@ -92,8 +92,7 @@ namespace ADO.NET_LinkedinProfiles
                     }
                     foreach (var item in profiles)
                     {
-                        string insertQuery = "Insert Into LinkedinInfo(Id, Username, FullName, Specialty, Location, Education, Company, ConnectionCount, Website" +
-                                                                      "Phone, Email, Birthday, Connected, ImageUrl, LastUpdate)" +
+                        string insertQuery = "Insert LinkedinInfo" +
                                               $"values({item.Id}, {item.Username}, {item.FullName}, {item.Specialty}, {item.Location}, {item.Education}," +
                                                      $"{item.Company}, {item.ConnectionCount}, {item.Website}, {item.Phone}, {item.Email}, {item.Birthday}," +
                                                      $"{item.Connected}, {item.ImageUrl}, {item.LastUpdate})";
@@ -109,6 +108,7 @@ namespace ADO.NET_LinkedinProfiles
                 Console.WriteLine(e.Message);
             }
             Console.WriteLine("Table is ready!");
+            //(Id, Username, FullName, Specialty, Location, Education, Company, ConnectionCount, Website, Phone, Email, Birthday, Connected, ImageUrl, LastUpdate)
         }
     }
 }
