@@ -22,7 +22,7 @@ namespace ADO.NET_LinkedinProfiles
                 using (SqlConnection connection = new SqlConnection(connectionBuilder.ConnectionString))
                 {
                     connection.Open();
-                    //Console.WriteLine(connection.State);
+                    Console.WriteLine(connection.State);
                     string query = "select * from LinkedinProfile";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -82,7 +82,7 @@ namespace ADO.NET_LinkedinProfiles
                 using (SqlConnection connection = new SqlConnection(connectionBuilder.ConnectionString))
                 {
                     connection.Open();
-                    //Console.WriteLine(connection.State);
+                    Console.WriteLine(connection.State);
                     string query = "create table LinkedinInfo(Id int, Username varchar(100), FullName varchar(100), Specialty varchar(100), Location varchar(100)," +
                                                              "Education varchar(100), Company varchar(100), ConnectionCount int, Website varchar(100), Phone varchar(100)," +
                                                              "Email varchar(100), Birthday date, Connected varchar(100), ImageUrl varchar(100), LastUpdate datetime)";
@@ -108,7 +108,6 @@ namespace ADO.NET_LinkedinProfiles
                 Console.WriteLine(e.Message);
             }
             Console.WriteLine("Table is ready!");
-            //(Id, Username, FullName, Specialty, Location, Education, Company, ConnectionCount, Website, Phone, Email, Birthday, Connected, ImageUrl, LastUpdate)
         }
     }
 }
