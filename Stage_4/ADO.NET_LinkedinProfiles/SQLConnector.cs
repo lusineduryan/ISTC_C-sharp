@@ -92,7 +92,7 @@ namespace ADO.NET_LinkedinProfiles
                     }
                     foreach (var item in profiles)
                     {
-                        string insertQuery = "Insert into LinkedinInfo" +
+                        string insertQuery = "Insert into LinkedinInfo " +
                                               $"values({item.Id}, {item.Username}, {item.FullName}, {item.Specialty}, {item.Location}, {item.Education}," +
                                                      $"{item.Company}, {item.ConnectionCount}, {item.Website}, {item.Phone}, {item.Email}, {item.Birthday}," +
                                                      $"{item.Connected}, {item.ImageUrl}, {item.LastUpdate})";
