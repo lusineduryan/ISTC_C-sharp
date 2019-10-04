@@ -16,13 +16,18 @@ namespace EntityFramework_LinkedinProfiles
                 Console.WriteLine(item);
             }
 
-            //CRUD.RemoveSchool(9);
+            CRUD.RemoveSchool(9);
 
-            //CRUD.AddPerson("lusineduryan", "Lusine Duryan", "Senior Financial Analyst", "Armenia", "YSU", "SCDM", 932);
+            CRUD.AddPerson("lusineduryan", "Lusine Duryan", "Senior Financial Analyst", "Armenia", "YSU", "SCDM", 932);
 
-            //CRUD.UpdateEducation(3383, "Yerevan State University");
+            CRUD.UpdateEducation(3383, "Yerevan State University");
 
+            var joinedtable = NewModel.Generate();
 
+            foreach (var item in joinedtable)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }
