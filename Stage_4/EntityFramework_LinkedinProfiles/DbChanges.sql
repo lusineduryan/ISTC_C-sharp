@@ -12,3 +12,4 @@ alter table GithubProfile
 drop column Location
 
 
+
