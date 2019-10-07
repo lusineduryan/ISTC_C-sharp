@@ -10,6 +10,12 @@ namespace EF_CodeFirst_University
     {
         static void Main(string[] args)
         {
+            using (UniversityContext context = new UniversityContext())
+            {
+                context.Students.Add(new Student { FirstName = "Lusine", LastName = "Duryan" });
+                Console.WriteLine("record added");
+                Console.ReadKey();
+            }
         }
     }
 }
