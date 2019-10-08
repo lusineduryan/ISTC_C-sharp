@@ -55,21 +55,9 @@
   <ItemGroup>
     <Compile Include="Dean.cs" />
     <Compile Include="Lecturer.cs" />
-    <Compile Include="Migrations\201910071107061_Student.cs" />
-    <Compile Include="Migrations\201910071107061_Student.designer.cs">
-      <DependentUpon>201910071107061_Student.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910071110451_Lecturer.cs" />
-    <Compile Include="Migrations\201910071110451_Lecturer.designer.cs">
-      <DependentUpon>201910071110451_Lecturer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910071114046_Rector.cs" />
-    <Compile Include="Migrations\201910071114046_Rector.designer.cs">
-      <DependentUpon>201910071114046_Rector.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910071115297_Dean.cs" />
-    <Compile Include="Migrations\201910071115297_Dean.designer.cs">
-      <DependentUpon>201910071115297_Dean.cs</DependentUpon>
+    <Compile Include="Migrations\201910081157465_Initial.cs" />
+    <Compile Include="Migrations\201910081157465_Initial.designer.cs">
+      <DependentUpon>201910081157465_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -83,17 +71,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910071107061_Student.resx">
-      <DependentUpon>201910071107061_Student.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071110451_Lecturer.resx">
-      <DependentUpon>201910071110451_Lecturer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071114046_Rector.resx">
-      <DependentUpon>201910071114046_Rector.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071115297_Dean.resx">
-      <DependentUpon>201910071115297_Dean.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910081157465_Initial.resx">
+      <DependentUpon>201910081157465_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

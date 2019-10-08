@@ -7,13 +7,13 @@ namespace EF_CodeFirst_University.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.3.0")]
-    public sealed partial class Lecturer : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Lecturer));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201910071110451_Lecturer"; }
+            get { return "201910081157465_Initial"; }
         }
         
         string IMigrationMetadata.Source
