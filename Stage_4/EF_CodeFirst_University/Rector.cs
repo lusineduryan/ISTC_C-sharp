@@ -21,6 +21,7 @@ namespace EF_CodeFirst_University
 
         public string University { get; set; }
 
+
         public virtual ICollection<Dean> Deans { get; set; }
     }
 }
