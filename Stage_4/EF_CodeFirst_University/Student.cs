@@ -19,6 +19,7 @@ namespace EF_CodeFirst_University
         [Required]
         public string LastName { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime? Birthday { get; set; }
 
         [DataType(DataType.EmailAddress)]
