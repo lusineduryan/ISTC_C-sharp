@@ -12,9 +12,11 @@ namespace EF_CodeFirst_University
         {
             using (UniversityContext context = new UniversityContext())
             {
-                context.Students.Add(new Student { FirstName = "Lusine", LastName = "Duryan"});
-                context.SaveChanges();
-                Console.WriteLine("record added");
+                DataInsert.AddStudentsData();
+                DataInsert.AddLecturersDate();
+                DataInsert.AddDeansData();
+                DataInsert.AddRectorsData();
+                Console.WriteLine("records added");
                 Console.ReadKey();
             }
         }
