@@ -22,7 +22,6 @@ namespace EF_CodeFirst_University
         [DataType(DataType.Date)]
         public DateTime? Birthday { get; set; }
 
-
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
         public string Email { get; set; }
