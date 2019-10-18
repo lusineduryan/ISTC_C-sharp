@@ -13,7 +13,6 @@ namespace EF_CodeFirst_University
             using (UniversityContext context = new UniversityContext())
             {
                 DataInsert.AddData();
-
                 Console.WriteLine("records added");
                 Console.ReadKey();
             }
