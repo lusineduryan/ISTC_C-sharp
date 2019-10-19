@@ -14,7 +14,6 @@ namespace EF_CodeFirst_University
             {
                 DataInsert.AddData();
                 Console.WriteLine("records added");
-
                 Console.ReadKey();
             }
         }
