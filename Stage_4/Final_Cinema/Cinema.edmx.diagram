@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c3a081141224aa9ac2efb13f47c5b6f" Name="Diagram1">
+        <EntityTypeShape EntityType="CinemaModel.Actor" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaModel.Cinema" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaModel.Director" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaModel.Genre" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaModel.Movie" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaModel.MovieSession" Width="1.5" PointX="7.5" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="CinemaModel.FK__Movie__DirectorI__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaModel.FK__Movie__GenreId__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaModel.FK__MovieSess__Movie__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaModel.Actor_Director" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaModel.Actor_Genre" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaModel.Actor_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaModel.Cinema_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaModel.Movie_Cinema" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
