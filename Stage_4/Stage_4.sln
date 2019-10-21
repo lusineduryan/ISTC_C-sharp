@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework_LinkedinPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_CodeFirst_University", "EF_CodeFirst_University\EF_CodeFirst_University.csproj", "{36EA5F51-CFE7-4114-A206-3CA66F990150}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final_Cinema", "Final_Cinema\Final_Cinema.csproj", "{77C3940E-DDA2-42C8-9DCA-17BD80F085C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{36EA5F51-CFE7-4114-A206-3CA66F990150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36EA5F51-CFE7-4114-A206-3CA66F990150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36EA5F51-CFE7-4114-A206-3CA66F990150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C3940E-DDA2-42C8-9DCA-17BD80F085C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C3940E-DDA2-42C8-9DCA-17BD80F085C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C3940E-DDA2-42C8-9DCA-17BD80F085C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C3940E-DDA2-42C8-9DCA-17BD80F085C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
