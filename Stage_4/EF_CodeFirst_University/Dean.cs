@@ -11,7 +11,6 @@ namespace EF_CodeFirst_University
     public class Dean
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
         public int Id { get; set; }
 
         [Required]
