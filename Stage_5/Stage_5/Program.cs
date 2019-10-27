@@ -10,7 +10,6 @@ namespace Stage_5
     {
         static void Main(string[] args)
         {
-
         }
     }
 }
