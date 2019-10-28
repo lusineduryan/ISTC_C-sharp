@@ -23,7 +23,7 @@ namespace WindowsService
                                   serviceConfig.SetDisplayName("Awesome File Converter");
 
                                   serviceConfig.StartAutomatically();
-                              });   
+                              });
         }
     }
 }
