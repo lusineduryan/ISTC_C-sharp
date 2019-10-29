@@ -21,9 +21,8 @@ namespace WindowsService
                                                                             });
                                   serviceConfig.SetServiceName("AwesomeFileConverter");
                                   serviceConfig.SetDisplayName("Awesome File Converter");
-
                                   serviceConfig.StartAutomatically();
-                              });
+                              });   
         }
     }
 }
