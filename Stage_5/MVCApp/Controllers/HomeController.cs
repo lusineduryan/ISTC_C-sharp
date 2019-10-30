@@ -20,10 +20,11 @@ namespace MVCApp.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Fin = "Finance";
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }
