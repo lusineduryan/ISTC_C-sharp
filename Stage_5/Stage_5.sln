@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService", "WindowsSe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCApp", "MVCApp\MVCApp.csproj", "{7F42DF72-83D6-4946-89B2-0BBE27877D6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{6199DC81-E5E5-4AFF-ADF9-9ECBE3229ACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{6199DC81-E5E5-4AFF-ADF9-9ECBE3229ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{118BF082-60C2-4398-A6F9-EBE94B77350B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6199DC81-E5E5-4AFF-ADF9-9ECBE3229ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6199DC81-E5E5-4AFF-ADF9-9ECBE3229ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6199DC81-E5E5-4AFF-ADF9-9ECBE3229ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118BF082-60C2-4398-A6F9-EBE94B77350B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118BF082-60C2-4398-A6F9-EBE94B77350B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118BF082-60C2-4398-A6F9-EBE94B77350B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118BF082-60C2-4398-A6F9-EBE94B77350B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
