@@ -28,8 +28,8 @@ namespace Services
         {
             services.AddControllers();
             services.AddSingleton<IHello, Hello>();
-            services.AddTransient<ICalculator<T>, Calculator<T>>();
-            services.AddScoped<ITime, Time>();
+            //services.AddTransient<ICalculator<T>, Calculator<T>>();
+            //services.AddScoped<ITime, Time>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
