@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Services.Services;
+using DependencyInjection.Services;
 
-namespace Services.Controllers
+namespace DependencyInjection.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

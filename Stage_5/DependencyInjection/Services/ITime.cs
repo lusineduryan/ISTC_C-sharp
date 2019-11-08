@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Services
+namespace DependencyInjection.Services
 {
     public interface ITime
     {
         DateTime GetCurrentTime();
-        int GetAge(DateTime birthday);
+        int GetAge();
     }
 }

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middlewares", "Middlewares\Middlewares.csproj", "{20BF7117-C474-4E86-B01E-F1D33655F7C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{C70E7CB6-84D7-4C39-A6CD-0A488DE9A55B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{20BF7117-C474-4E86-B01E-F1D33655F7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20BF7117-C474-4E86-B01E-F1D33655F7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20BF7117-C474-4E86-B01E-F1D33655F7C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70E7CB6-84D7-4C39-A6CD-0A488DE9A55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70E7CB6-84D7-4C39-A6CD-0A488DE9A55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70E7CB6-84D7-4C39-A6CD-0A488DE9A55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70E7CB6-84D7-4C39-A6CD-0A488DE9A55B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

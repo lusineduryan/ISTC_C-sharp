@@ -10,9 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Services.Services;
+using DependencyInjection.Services;
 
-namespace Services
+namespace DependencyInjection
 {
     public class Startup
     {
@@ -28,8 +28,8 @@ namespace Services
         {
             services.AddControllers();
             services.AddSingleton<IHello, Hello>();
-            services.AddTransient<ICalculator, Calculator>();
             services.AddScoped<ITime, Time>();
+            services.AddTransient<ICalculator, Calculator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
