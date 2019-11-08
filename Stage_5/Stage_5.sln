@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCWebApp", "MVCWebApp\MVCW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{118BF082-60C2-4398-A6F9-EBE94B77350B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middlewares", "Middlewares\Middlewares.csproj", "{20BF7117-C474-4E86-B01E-F1D33655F7C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middlewares", "Middlewares\Middlewares.csproj", "{20BF7117-C474-4E86-B01E-F1D33655F7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{20BF7117-C474-4E86-B01E-F1D33655F7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20BF7117-C474-4E86-B01E-F1D33655F7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20BF7117-C474-4E86-B01E-F1D33655F7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3018DB-D8DB-4D25-AC30-EF5BAEDFAED2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
