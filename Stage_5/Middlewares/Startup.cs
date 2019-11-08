@@ -12,7 +12,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using Middlewares;
 
 namespace Middlewares
 {
@@ -40,7 +39,7 @@ namespace Middlewares
             {
                 endpoints.MapControllerRoute("default", "/{id1:int}/{id2:int}");
             });
-
+            
             app.UseProductMiddleware();
         }
     }
