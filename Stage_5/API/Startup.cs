@@ -30,6 +30,7 @@ namespace API
             services.AddControllers();
             var connection = @"DESKTOP-0IKC9M0;Database=Monitoring;Trusted_Connection=True;";
             services.AddDbContext<MonitoringContext>(options => options.UseSqlServer(connection));
+            services.AddLogging();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
