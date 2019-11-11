@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API.Models;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Debug;
 
 namespace API.Controllers
 {
@@ -20,10 +22,18 @@ namespace API.Controllers
             _context = context;
         }
 
+        private readonly ILogger _logger;
+
+        public GithubProfilesController(ILogger logger)
+        {
+            _logger = logger;
+        }
+
         // GET: api/GithubProfiles
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GithubProfile>>> GetGithubProfile()
         {
+            _logger.LogInformation("Created Nlog!!!");
             return await _context.GithubProfile.ToListAsync();
         }
 

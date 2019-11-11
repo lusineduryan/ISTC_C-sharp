@@ -30,6 +30,7 @@ namespace DependencyInjection
             services.AddSingleton<IHello, Hello>();
             services.AddScoped<ITime, Time>();
             services.AddTransient<ICalculator, Calculator>();
+            services.AddLogging();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

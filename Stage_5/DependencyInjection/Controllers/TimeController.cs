@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DependencyInjection.Services;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Debug;
 
 namespace DependencyInjection.Controllers
 {
@@ -13,17 +15,20 @@ namespace DependencyInjection.Controllers
     public class TimeController : ControllerBase
     {
         private readonly ITime _iTimeService;
-        public TimeController(ITime iTimeService)
+        private readonly ILogger _logger;
+        public TimeController(ITime iTimeService, ILogger logger)
         {
             _iTimeService = iTimeService;
+            _logger = logger;
         }
 
         [HttpGet]
         [Route("CurrentTime")]
         public IActionResult CurrentTime()
         {
-            var age = _iTimeService.GetCurrentTime();
-            return Ok(age);
+            var time = _iTimeService.GetCurrentTime();
+            _logger.LogInformation($"new time {time}");
+            return Ok(time);
         }
 
         [HttpGet]
@@ -31,6 +36,7 @@ namespace DependencyInjection.Controllers
         public IActionResult Age()
         {
             var age = _iTimeService.GetAge();
+            _logger.LogInformation($"new age {age}");
             return Ok(age);
         }
     }
