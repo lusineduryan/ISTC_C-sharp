@@ -15,16 +15,11 @@ namespace DependencyInjection.Controllers
     public class TimeController : ControllerBase
     {
         private readonly ITime _iTimeService;
-        private readonly ILogger _logger;
+        private readonly ILogger<TimeController> _logger;
 
-        public TimeController(ITime iTimeService, ILogger logger)
+        public TimeController(ITime iTimeService, ILogger<TimeController> logger)
         {
             _iTimeService = iTimeService;
-            _logger = logger;
-        }
-
-        public TimeController(ILogger logger)
-        {
             _logger = logger;
         }
 
