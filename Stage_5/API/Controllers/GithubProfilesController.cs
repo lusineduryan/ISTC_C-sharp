@@ -16,16 +16,10 @@ namespace API.Controllers
     public class GithubProfilesController : ControllerBase
     {
         private readonly MonitoringContext _context;
-
-        public GithubProfilesController(MonitoringContext context)
+        private readonly ILogger<GithubProfilesController> _logger;
+        public GithubProfilesController(MonitoringContext context, ILogger<GithubProfilesController> logger)
         {
             _context = context;
-        }
-
-        private readonly ILogger _logger;
-
-        public GithubProfilesController(ILogger logger)
-        {
             _logger = logger;
         }
 
