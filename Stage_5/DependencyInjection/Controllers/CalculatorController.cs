@@ -55,7 +55,6 @@ namespace DependencyInjection.Controllers
         [Route("SquareRoot/{number1:double}")]
         public IActionResult SquareRoot(double number1)
         {
-            
             var sqRoot = _iCalcService.SquareRoot(number1);
             return Ok(sqRoot);
         }
