@@ -40,6 +40,7 @@ namespace DependencyInjection
 
             app.UseEndpoints(endpoints =>
             {
+                
                 endpoints.MapControllers();
             });
         }
