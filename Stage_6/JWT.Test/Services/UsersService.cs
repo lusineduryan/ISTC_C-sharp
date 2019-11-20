@@ -94,7 +94,7 @@ namespace JWT.Test.Services
                 user.Username = userParam.Username;
             }
 
-            // update user properties if provided
+            // update other user fields if provided
             if (!string.IsNullOrWhiteSpace(userParam.FirstName))
                 user.FirstName = userParam.FirstName;
 
