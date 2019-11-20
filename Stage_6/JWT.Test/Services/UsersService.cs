@@ -20,10 +20,10 @@ namespace JWT.Test.Services
         User Create(User user, string password);
         void Update(User user, string password = null);
         void Delete(int id);
-        IEnumerable<User> GetAll();
+        // IEnumerable<User> GetAll();
     }
 
-    public class UsersService //: IUserService
+    public class UsersService : IUserService
     {
         private DataContext _context;
         private readonly AppSettings _appSettings;
