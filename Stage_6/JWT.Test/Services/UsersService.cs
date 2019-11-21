@@ -17,10 +17,10 @@ namespace JWT.Test.Services
     public interface IUserService
     {
         User Authenticate(string username, string password);
-        User Create(User user, string password);
-        void Update(User user, string password = null);
-        void Delete(int id);
-        // IEnumerable<User> GetAll();
+        User Register(User user, string password);
+        //void Update(User user, string password = null);
+        //void Delete(int id);
+        //IEnumerable<User> GetAll();
     }
 
     public class UsersService : IUserService
@@ -44,15 +44,15 @@ namespace JWT.Test.Services
             if (user == null)
                 return null;
 
-            // authentication successful so generate jwt token
+            // authentication successful, so jwt token is to generate
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                /*Subject = new ClaimsIdentity(new Claim[]
+                Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Name, user.Id.ToString())
-                }),*/
+                }),
                 Expires = DateTime.UtcNow.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
@@ -62,7 +62,7 @@ namespace JWT.Test.Services
             return user;
         }
 
-        public User Create(User user, string password)
+        public User Register(User user, string password)
         {
             // validation
             if (string.IsNullOrWhiteSpace(password))
@@ -71,13 +71,28 @@ namespace JWT.Test.Services
             if (_context.Users.Any(x => x.Username == user.Username))
                 throw new AppException("Username \"" + user.Username + "\" is already taken");
 
+            // registration successful, so jwt token is to generate
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                }),
+                //Expires = DateTime.UtcNow.AddDays(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            user.Token = tokenHandler.WriteToken(token);
+
             _context.Users.Add(user);
             _context.SaveChanges();
 
             return user;
         }
 
-        public void Update(User userParam, string password = null)
+        /*public void Update(User userParam, string password = null)
         {
             var user = _context.Users.Find(userParam.Id);
 
@@ -113,7 +128,6 @@ namespace JWT.Test.Services
                 _context.Users.Remove(user);
                 _context.SaveChanges();
             }
-        }
-
+        }*/
     }
 }
