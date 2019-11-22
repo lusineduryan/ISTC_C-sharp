@@ -28,7 +28,7 @@ namespace EntityFramework_LinkedinProfiles
         }
 
         public static void AddPerson(string username, string fullName, string specialty, string location, string education, string company, int connectionCount)
-        {
+        { 
             using (MonitoringEntities context = new MonitoringEntities())
             {
                 context.LinkedinProfiles.Add(new LinkedinProfile { Username = username, FullName = fullName, Specialty = specialty, Location = location, Education = education, Company = company, ConnectionCount = connectionCount });
