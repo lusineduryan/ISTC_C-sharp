@@ -17,6 +17,7 @@ namespace Homework_4_calculator
             Console.Write("\nPlease enter the operation type: ");
             string operationType = Console.ReadLine();
 
+            
             double result = 0;
             if (operationType == "+")
             {
