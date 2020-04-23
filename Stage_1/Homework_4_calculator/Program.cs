@@ -10,6 +10,7 @@ namespace Homework_4_calculator
     {
         static void Main(string[] args)
         {
+            
             Console.Write("Please enter the first number: ");
             double firstNumber = Convert.ToDouble(Console.ReadLine());
             Console.Write("\nPlease enter the second number: ");
