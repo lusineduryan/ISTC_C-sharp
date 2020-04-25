@@ -13,7 +13,6 @@ namespace Homework_4_calculator
             Console.Write("Please enter the first number: ");
             double firstNumber = Convert.ToDouble(Console.ReadLine());
             Console.Write("\nPlease enter the second number: ");
-            
             double secondNumber = Convert.ToDouble(Console.ReadLine());
             Console.Write("\nPlease enter the operation type: ");
             string operationType = Console.ReadLine();
