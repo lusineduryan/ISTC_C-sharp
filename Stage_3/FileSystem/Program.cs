@@ -16,7 +16,6 @@ namespace FileSystem
             Console.WriteLine($"The directory was last accesses on: { dirinfo.LastAccessTime}");
             Console.ReadKey();
             System.IO.File.AppendAllLines(@"C:\Users\USER_2\source\Text.txt", Enumerable.Range(0, 100).Select(x => x.ToString()));
-           
             System.IO.FileInfo[] filesInDir = dirinfo.GetFiles();
             foreach (System.IO.FileInfo file in filesInDir)
             {
