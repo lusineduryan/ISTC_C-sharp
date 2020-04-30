@@ -18,6 +18,7 @@ namespace FileSystem
             System.IO.File.AppendAllLines(@"C:\Users\USER_2\source\Text.txt", Enumerable.Range(0, 100).Select(x => x.ToString()));
             System.IO.FileInfo[] filesInDir = dirinfo.GetFiles();
             foreach (System.IO.FileInfo file in filesInDir)
+            
             {
                 Console.WriteLine($"File Name {file.FullName} Size: {file.Length} bytes");
             }
